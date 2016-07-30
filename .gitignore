@@ -1,0 +1,10 @@
+frontend/node_modules
+frontend/bundle.js
+frontend/npm-debug.log
+
+frontend/# IntelliJ
+frontend/*.iml
+frontend/.idea
+
+server/node_modules
+server/config.js

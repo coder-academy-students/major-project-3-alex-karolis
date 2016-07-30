@@ -1,0 +1,34 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "serverAPI with auth",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Alex Karolis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexi21/ServerAPIwithAuth/issues"
+  },
+  "homepage": "https://github.com/alexi21/ServerAPIwithAuth#readme",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.15.2",
+    "cloudinary": "^1.4.1",
+    "cors": "^2.7.1",
+    "express": "^4.14.0",
+    "jwt-simple": "^0.5.0",
+    "morgan": "^1.7.0",
+    "passport": "^0.3.2",
+    "passport-jwt": "^2.1.0",
+    "passport-local": "^1.0.0",
+    "rethinkdb": "^2.3.2",
+    "thinky": "^2.3.4"
+  }
+}

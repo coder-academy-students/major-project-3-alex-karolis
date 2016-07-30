@@ -1,0 +1,131 @@
+body { background-color: #eef4f8 !important; }
+
+table { table-layout: fixed !important; }
+
+td { width: calc(100%/4) !important; }
+
+.github {
+    padding: 0;
+    margin-left: 55px;
+}
+
+.container { min-height: 100%; }
+
+.main { margin-bottom: 108px; }
+
+.bottom-margin-108px {
+    margin-bottom: 108px;
+}
+
+.text-sm {
+    font-size: 0.7em;
+    margin-bottom: 1px;
+    margin-top: 25px;
+}
+
+.welcome-component {
+    margin: 50px 0;
+    text-align: center;
+    color: #2f6fad;
+}
+.center-text { text-align: center; }
+
+.error { color: red; }
+
+.textarea-user-bio-edit {
+    width: 90% !important;
+    margin-left: 5% !important;
+}
+.update-button-user-bio-edit { margin-bottom: 15px !important; }
+
+.edit-post-button { margin: 0 0 25px 0 !important; }
+
+.card-img-top {
+    border-radius: 0.25rem !important;
+    margin-top: 1% !important;
+    margin-right: 1% !important;
+}
+
+.show-post-text {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.bottom-margin-50px {
+    margin-bottom: 50px;
+    margin-left: 30px;
+}
+.votes {
+    margin: 0 0 0 16px;
+}
+.onHover:hover {
+    cursor: pointer;
+}
+.push-from-top {
+    margin-top: 50px;
+}
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.comment-list {
+    font-size: 0.9em;
+}
+
+.comment-list-header {
+    font-size: 0.8em;
+    margin-bottom: 5px;
+}
+
+.search-result-list {
+    margin: 25px 0;
+}
+
+.search-email-result {
+    font-size: 0.8em;
+    color: #2f6fad;
+    padding-bottom: 2px;
+}
+
+.message-title {
+    color: #2f6fad;
+    padding-bottom: 20px;
+}
+
+.float-right {
+    float: right;
+}
+
+.pad-top-20 {
+    padding-top: 20px;
+}
+
+.message-post {
+    padding-bottom: 20px;
+}
+
+.footer {
+    margin-top: 20px;
+    color: white;
+    background-color: #2e2e2e;
+    height: 58px;
+    width: 100% !important;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding-left: 8%;
+}
+
+.footer-text {
+    text-align: center;
+    margin-right: 180px;
+    float: right;
+    padding-top: 6px;
+}
+.footer-text-2 {
+    font-size: 0.8em;
+    text-align: center;
+    margin-right: 180px;
+    float: right;
+    padding-top: 6px;
+}

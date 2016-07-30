@@ -1,0 +1,42 @@
+2016-07-23T13:01:06.727728000 0.577847s notice: Recursively removing directory /Users/alexi2/Documents/Dropbox/Projects/SuperSearch/server/rethinkdb_data/tmp
+2016-07-23T13:01:06.731535000 0.581660s notice: Initializing directory /Users/alexi2/Documents/Dropbox/Projects/SuperSearch/server/rethinkdb_data
+2016-07-23T13:01:06.731677000 0.581794s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory '/Users/alexi2/Documents/Dropbox/Projects/SuperSearch/server/rethinkdb_data' did not already exist or is empty.)
+2016-07-23T13:01:06.732020000 0.582137s notice: Running rethinkdb 2.3.4 (CLANG 7.3.0 (clang-703.0.31))...
+2016-07-23T13:01:06.763705000 0.613824s notice: Running on Darwin 15.6.0 x86_64
+2016-07-23T13:01:06.763768000 0.613885s notice: Loading data from directory /Users/alexi2/Documents/Dropbox/Projects/SuperSearch/server/rethinkdb_data
+2016-07-23T13:01:06.936900000 0.787017s info: Automatically using cache size of 100 MB
+2016-07-23T13:01:06.936913000 0.787030s warn: Cache size does not leave much memory for server and query overhead (available memory: 515 MB).
+2016-07-23T13:01:06.936931000 0.787048s warn: Cache size is very low and may impact performance.
+2016-07-23T13:01:06.941044000 0.791161s notice: Listening for intracluster connections on port 29015
+2016-07-23T13:01:06.944425000 0.794542s notice: Listening for client driver connections on port 28015
+2016-07-23T13:01:06.944621000 0.794739s notice: Listening for administrative HTTP connections on port 8080
+2016-07-23T13:01:06.944626000 0.794744s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2016-07-23T13:01:06.944634000 0.794751s notice: Listening on driver addresses: 127.0.0.1, ::1
+2016-07-23T13:01:06.944637000 0.794754s notice: Listening on http addresses: 127.0.0.1, ::1
+2016-07-23T13:01:06.944644000 0.794761s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-07-23T13:01:06.944650000 0.794767s notice: Server ready, "SuperSearch" 14cf60ee-024f-4a40-8312-3ecfaf5c36d7
+2016-07-23T13:01:47.653529000 41.501704s info: Table 2f4831e4-f745-4f52-827e-77e7f2a6dc98: Starting a new Raft election for term 1.
+2016-07-23T13:01:47.654574000 41.502749s info: Table 2f4831e4-f745-4f52-827e-77e7f2a6dc98: Added replica on this server.
+2016-07-23T13:01:47.667026000 41.515201s info: Table 2f4831e4-f745-4f52-827e-77e7f2a6dc98: This server is Raft leader for term 1. Latest log index is 0.
+2016-07-23T13:02:18.721949000 72.568640s info: Table d05564a1-9b19-4570-b855-5eb3f734a089: Starting a new Raft election for term 1.
+2016-07-23T13:02:18.722494000 72.569184s info: Table d05564a1-9b19-4570-b855-5eb3f734a089: Added replica on this server.
+2016-07-23T13:02:18.732976000 72.579666s info: Table d05564a1-9b19-4570-b855-5eb3f734a089: This server is Raft leader for term 1. Latest log index is 0.
+2016-07-23T13:03:54.524361000 168.366439s notice: Removing file /Users/alexi2/Documents/Dropbox/Projects/SuperSearch/server/rethinkdb_data/2f4831e4-f745-4f52-827e-77e7f2a6dc98
+2016-07-23T13:03:54.524376000 168.366453s info: Table 2f4831e4-f745-4f52-827e-77e7f2a6dc98: Deleted the table.
+2016-07-23T13:03:54.538940000 168.381018s notice: Removing file /Users/alexi2/Documents/Dropbox/Projects/SuperSearch/server/rethinkdb_data/d05564a1-9b19-4570-b855-5eb3f734a089
+2016-07-23T13:03:54.538954000 168.381031s info: Table d05564a1-9b19-4570-b855-5eb3f734a089: Deleted the table.
+2016-07-23T13:04:07.285495000 181.126957s info: Table 8e5069c2-8d83-45bd-a81b-8c36d316bb3b: Starting a new Raft election for term 1.
+2016-07-23T13:04:07.285751000 181.127213s info: Table 8e5069c2-8d83-45bd-a81b-8c36d316bb3b: Added replica on this server.
+2016-07-23T13:04:07.294617000 181.136079s info: Table 8e5069c2-8d83-45bd-a81b-8c36d316bb3b: This server is Raft leader for term 1. Latest log index is 0.
+2016-07-23T13:04:17.061487000 190.902486s info: Table f0df4adb-fdfa-467a-b5d5-ae88468f9b8b: Starting a new Raft election for term 1.
+2016-07-23T13:04:17.061911000 190.902910s info: Table f0df4adb-fdfa-467a-b5d5-ae88468f9b8b: Added replica on this server.
+2016-07-23T13:04:17.075004000 190.916003s info: Table f0df4adb-fdfa-467a-b5d5-ae88468f9b8b: This server is Raft leader for term 1. Latest log index is 0.
+2016-07-23T13:05:58.340778000 292.176894s notice: Removing file /Users/alexi2/Documents/Dropbox/Projects/SuperSearch/server/rethinkdb_data/8e5069c2-8d83-45bd-a81b-8c36d316bb3b
+2016-07-23T13:05:58.340792000 292.176907s info: Table 8e5069c2-8d83-45bd-a81b-8c36d316bb3b: Deleted the table.
+2016-07-23T13:05:58.358228000 292.194344s notice: Removing file /Users/alexi2/Documents/Dropbox/Projects/SuperSearch/server/rethinkdb_data/f0df4adb-fdfa-467a-b5d5-ae88468f9b8b
+2016-07-23T13:05:58.358243000 292.194358s info: Table f0df4adb-fdfa-467a-b5d5-ae88468f9b8b: Deleted the table.
+2016-07-23T13:08:19.469879000 433.299188s notice: Server got SIGINT from pid 796, uid 501; shutting down...
+2016-07-23T13:08:19.470166000 433.299474s notice: Shutting down client connections...
+2016-07-23T13:08:19.486369000 433.315678s notice: All client connections closed.
+2016-07-23T13:08:19.486395000 433.315703s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2016-07-23T13:08:19.488475000 433.317783s notice: Storage engine shut down.

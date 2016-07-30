@@ -1,0 +1,382 @@
+2016-07-26T17:36:06.951909000 0.072387s notice: Recursively removing directory /Users/alexi2/Documents/Dropbox/Projects/SuperSearch/rethinkdb_data/tmp
+2016-07-26T17:36:06.955505000 0.075989s notice: Initializing directory /Users/alexi2/Documents/Dropbox/Projects/SuperSearch/rethinkdb_data
+2016-07-26T17:36:06.955687000 0.076164s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory '/Users/alexi2/Documents/Dropbox/Projects/SuperSearch/rethinkdb_data' did not already exist or is empty.)
+2016-07-26T17:36:06.955743000 0.076221s notice: Running rethinkdb 2.3.4 (CLANG 7.3.0 (clang-703.0.31))...
+2016-07-26T17:36:06.977999000 0.098478s notice: Running on Darwin 15.6.0 x86_64
+2016-07-26T17:36:06.978060000 0.098537s notice: Loading data from directory /Users/alexi2/Documents/Dropbox/Projects/SuperSearch/rethinkdb_data
+2016-07-26T17:36:07.128953000 0.249431s info: Automatically using cache size of 100 MB
+2016-07-26T17:36:07.128968000 0.249445s warn: Cache size does not leave much memory for server and query overhead (available memory: 850 MB).
+2016-07-26T17:36:07.128976000 0.249453s warn: Cache size is very low and may impact performance.
+2016-07-26T17:36:07.131968000 0.252446s notice: Listening for intracluster connections on port 29015
+2016-07-26T17:36:07.135533000 0.256010s notice: Listening for client driver connections on port 28015
+2016-07-26T17:36:07.135734000 0.256211s notice: Listening for administrative HTTP connections on port 8080
+2016-07-26T17:36:07.135737000 0.256214s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2016-07-26T17:36:07.135743000 0.256220s notice: Listening on driver addresses: 127.0.0.1, ::1
+2016-07-26T17:36:07.135745000 0.256222s notice: Listening on http addresses: 127.0.0.1, ::1
+2016-07-26T17:36:07.135750000 0.256227s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-07-26T17:36:07.135756000 0.256233s notice: Server ready, "MacBook_Air_local_ek2" a6e26735-1a58-41c4-81c3-87e39e9255fd
+2016-07-26T17:36:39.013670000 32.131949s info: Table 7759d9f6-9330-43b9-8fc9-8d11b7cc651d: Starting a new Raft election for term 1.
+2016-07-26T17:36:39.014640000 32.132919s info: Table 7759d9f6-9330-43b9-8fc9-8d11b7cc651d: Added replica on this server.
+2016-07-26T17:36:39.015207000 32.133486s info: Table d5fb8b77-aa44-4871-91e6-e269b3261e3f: Starting a new Raft election for term 1.
+2016-07-26T17:36:39.015397000 32.133676s info: Table d5fb8b77-aa44-4871-91e6-e269b3261e3f: Added replica on this server.
+2016-07-26T17:36:39.016004000 32.134282s info: Table cfaabdef-34f7-4cc3-89f1-963505240101: Starting a new Raft election for term 1.
+2016-07-26T17:36:39.016183000 32.134461s info: Table cfaabdef-34f7-4cc3-89f1-963505240101: Added replica on this server.
+2016-07-26T17:36:39.027360000 32.145639s info: Table 7759d9f6-9330-43b9-8fc9-8d11b7cc651d: This server is Raft leader for term 1. Latest log index is 0.
+2016-07-26T17:36:39.035072000 32.153351s info: Table d5fb8b77-aa44-4871-91e6-e269b3261e3f: This server is Raft leader for term 1. Latest log index is 0.
+2016-07-26T17:36:39.035157000 32.153435s info: Table cfaabdef-34f7-4cc3-89f1-963505240101: This server is Raft leader for term 1. Latest log index is 0.
+2016-07-26T17:36:39.574867000 32.693145s info: Table 7759d9f6-9330-43b9-8fc9-8d11b7cc651d: Configuration is changing.
+2016-07-26T21:46:13.472611000 15006.968059s notice: Server got SIGINT from pid 529, uid 501; shutting down...
+2016-07-26T21:46:13.474581000 15006.970029s notice: Shutting down client connections...
+2016-07-26T21:46:13.476670000 15006.972118s notice: All client connections closed.
+2016-07-26T21:46:13.476679000 15006.972127s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2016-07-26T21:46:13.531925000 15007.027373s notice: Storage engine shut down.
+2016-07-26T21:46:19.890956000 0.380732s notice: Running rethinkdb 2.3.4 (CLANG 7.3.0 (clang-703.0.31))...
+2016-07-26T21:46:19.910457000 0.400231s notice: Running on Darwin 15.6.0 x86_64
+2016-07-26T21:46:19.910519000 0.400291s notice: Loading data from directory /Users/alexi2/Documents/Dropbox/Projects/SuperSearch/rethinkdb_data
+2016-07-26T21:46:19.938769000 0.428542s info: Automatically using cache size of 100 MB
+2016-07-26T21:46:19.938784000 0.428556s warn: Cache size does not leave much memory for server and query overhead (available memory: 866 MB).
+2016-07-26T21:46:19.938791000 0.428562s warn: Cache size is very low and may impact performance.
+2016-07-26T21:46:19.940885000 0.430657s notice: Listening for intracluster connections on port 29015
+2016-07-26T21:46:20.017909000 0.507682s notice: Listening for client driver connections on port 28015
+2016-07-26T21:46:20.018105000 0.507877s notice: Listening for administrative HTTP connections on port 8080
+2016-07-26T21:46:20.018109000 0.507880s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2016-07-26T21:46:20.018111000 0.507882s notice: Listening on driver addresses: 127.0.0.1, ::1
+2016-07-26T21:46:20.018131000 0.507902s notice: Listening on http addresses: 127.0.0.1, ::1
+2016-07-26T21:46:20.018134000 0.507906s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-07-26T21:46:20.018137000 0.507908s notice: Server ready, "MacBook_Air_local_ek2" a6e26735-1a58-41c4-81c3-87e39e9255fd
+2016-07-26T21:46:21.588290000 2.077982s info: Table cfaabdef-34f7-4cc3-89f1-963505240101: Starting a new Raft election for term 2.
+2016-07-26T21:46:21.597825000 2.087517s info: Table cfaabdef-34f7-4cc3-89f1-963505240101: This server is Raft leader for term 2. Latest log index is 3.
+2016-07-26T21:46:21.813803000 2.303495s info: Table 7759d9f6-9330-43b9-8fc9-8d11b7cc651d: Starting a new Raft election for term 2.
+2016-07-26T21:46:21.824806000 2.314498s info: Table 7759d9f6-9330-43b9-8fc9-8d11b7cc651d: This server is Raft leader for term 2. Latest log index is 4.
+2016-07-26T21:46:22.012939000 2.502632s info: Table d5fb8b77-aa44-4871-91e6-e269b3261e3f: Starting a new Raft election for term 2.
+2016-07-26T21:46:22.023452000 2.513144s info: Table d5fb8b77-aa44-4871-91e6-e269b3261e3f: This server is Raft leader for term 2. Latest log index is 3.
+2016-07-28T10:14:38.578415000 0.377039s notice: Running rethinkdb 2.3.4 (CLANG 7.3.0 (clang-703.0.31))...
+2016-07-28T10:14:38.593276000 0.391896s notice: Running on Darwin 15.6.0 x86_64
+2016-07-28T10:14:38.593335000 0.391953s notice: Loading data from directory /Users/alexi2/Documents/Dropbox/Projects/SuperSearch/rethinkdb_data
+2016-07-28T10:14:38.664484000 0.463103s info: Automatically using cache size of 100 MB
+2016-07-28T10:14:38.664541000 0.463159s warn: Cache size does not leave much memory for server and query overhead (available memory: 651 MB).
+2016-07-28T10:14:38.664548000 0.463167s warn: Cache size is very low and may impact performance.
+2016-07-28T10:14:38.669011000 0.467629s notice: Listening for intracluster connections on port 29015
+2016-07-28T10:14:38.874824000 0.673443s notice: Listening for client driver connections on port 28015
+2016-07-28T10:14:38.875128000 0.673747s notice: Listening for administrative HTTP connections on port 8080
+2016-07-28T10:14:38.875133000 0.673752s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2016-07-28T10:14:38.875136000 0.673755s notice: Listening on driver addresses: 127.0.0.1, ::1
+2016-07-28T10:14:38.875161000 0.673779s notice: Listening on http addresses: 127.0.0.1, ::1
+2016-07-28T10:14:38.875164000 0.673782s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-07-28T10:14:38.875167000 0.673785s notice: Server ready, "MacBook_Air_local_ek2" a6e26735-1a58-41c4-81c3-87e39e9255fd
+2016-07-28T10:14:40.136151000 1.934696s info: Table 7759d9f6-9330-43b9-8fc9-8d11b7cc651d: Starting a new Raft election for term 3.
+2016-07-28T10:14:40.148564000 1.947109s info: Table 7759d9f6-9330-43b9-8fc9-8d11b7cc651d: This server is Raft leader for term 3. Latest log index is 7.
+2016-07-28T10:14:40.445122000 2.243667s info: Table d5fb8b77-aa44-4871-91e6-e269b3261e3f: Starting a new Raft election for term 3.
+2016-07-28T10:14:40.454628000 2.253173s info: Table d5fb8b77-aa44-4871-91e6-e269b3261e3f: This server is Raft leader for term 3. Latest log index is 6.
+2016-07-28T10:14:40.742914000 2.541385s info: Table cfaabdef-34f7-4cc3-89f1-963505240101: Starting a new Raft election for term 3.
+2016-07-28T10:14:40.752870000 2.551342s info: Table cfaabdef-34f7-4cc3-89f1-963505240101: This server is Raft leader for term 3. Latest log index is 6.
+2016-07-28T10:52:36.209736000 2277.877984s notice: Removing file /Users/alexi2/Documents/Dropbox/Projects/SuperSearch/rethinkdb_data/7759d9f6-9330-43b9-8fc9-8d11b7cc651d
+2016-07-28T10:52:36.209751000 2277.877998s info: Table 7759d9f6-9330-43b9-8fc9-8d11b7cc651d: Deleted the table.
+2016-07-28T10:52:36.237899000 2277.906147s notice: Removing file /Users/alexi2/Documents/Dropbox/Projects/SuperSearch/rethinkdb_data/cfaabdef-34f7-4cc3-89f1-963505240101
+2016-07-28T10:52:36.237913000 2277.906160s info: Table cfaabdef-34f7-4cc3-89f1-963505240101: Deleted the table.
+2016-07-28T10:52:36.256064000 2277.924382s notice: Removing file /Users/alexi2/Documents/Dropbox/Projects/SuperSearch/rethinkdb_data/d5fb8b77-aa44-4871-91e6-e269b3261e3f
+2016-07-28T10:52:36.256151000 2277.924399s info: Table d5fb8b77-aa44-4871-91e6-e269b3261e3f: Deleted the table.
+2016-07-28T10:52:50.717749000 2292.385415s info: Table 5fcf6f4e-d4c4-4d9e-bcb7-ae0054592d6e: Starting a new Raft election for term 1.
+2016-07-28T10:52:50.718830000 2292.386495s info: Table 5fcf6f4e-d4c4-4d9e-bcb7-ae0054592d6e: Added replica on this server.
+2016-07-28T10:52:50.719593000 2292.387259s info: Table 43bebe56-da6d-4785-9cd3-fed80a555b1a: Starting a new Raft election for term 1.
+2016-07-28T10:52:50.719680000 2292.387345s info: Table 43bebe56-da6d-4785-9cd3-fed80a555b1a: Added replica on this server.
+2016-07-28T10:52:50.733454000 2292.401120s info: Table 472f622c-cc82-40d3-83ca-448b29ce1790: Starting a new Raft election for term 1.
+2016-07-28T10:52:50.733911000 2292.401577s info: Table 472f622c-cc82-40d3-83ca-448b29ce1790: Added replica on this server.
+2016-07-28T10:52:50.744942000 2292.412609s info: Table 5fcf6f4e-d4c4-4d9e-bcb7-ae0054592d6e: This server is Raft leader for term 1. Latest log index is 0.
+2016-07-28T10:52:50.745047000 2292.412713s info: Table 43bebe56-da6d-4785-9cd3-fed80a555b1a: This server is Raft leader for term 1. Latest log index is 0.
+2016-07-28T10:52:50.751977000 2292.419643s info: Table 472f622c-cc82-40d3-83ca-448b29ce1790: This server is Raft leader for term 1. Latest log index is 0.
+2016-07-28T10:52:51.269833000 2292.937454s info: Table 43bebe56-da6d-4785-9cd3-fed80a555b1a: Configuration is changing.
+2016-07-28T11:37:43.957709000 4985.506471s notice: Server got SIGINT from pid 526, uid 501; shutting down...
+2016-07-28T11:37:43.958327000 4985.507089s notice: Shutting down client connections...
+2016-07-28T11:37:43.958959000 4985.507721s notice: All client connections closed.
+2016-07-28T11:37:43.958970000 4985.507731s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2016-07-28T11:37:43.988319000 4985.537081s notice: Storage engine shut down.
+2016-07-28T11:37:53.958743000 0.323455s notice: Running rethinkdb 2.3.4 (CLANG 7.3.0 (clang-703.0.31))...
+2016-07-28T11:37:53.971119000 0.335829s notice: Running on Darwin 15.6.0 x86_64
+2016-07-28T11:37:53.971251000 0.335959s notice: Loading data from directory /Users/alexi2/Documents/Dropbox/Projects/SuperSearch/rethinkdb_data
+2016-07-28T11:37:54.014130000 0.378838s info: Automatically using cache size of 100 MB
+2016-07-28T11:37:54.014143000 0.378850s warn: Cache size does not leave much memory for server and query overhead (available memory: 795 MB).
+2016-07-28T11:37:54.014150000 0.378857s warn: Cache size is very low and may impact performance.
+2016-07-28T11:37:54.015795000 0.380503s notice: Listening for intracluster connections on port 29015
+2016-07-28T11:37:54.135205000 0.499913s notice: Listening for client driver connections on port 28015
+2016-07-28T11:37:54.135471000 0.500179s notice: Listening for administrative HTTP connections on port 8080
+2016-07-28T11:37:54.135476000 0.500183s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2016-07-28T11:37:54.135479000 0.500186s notice: Listening on driver addresses: 127.0.0.1, ::1
+2016-07-28T11:37:54.135482000 0.500189s notice: Listening on http addresses: 127.0.0.1, ::1
+2016-07-28T11:37:54.135485000 0.500192s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-07-28T11:37:54.135488000 0.500196s notice: Server ready, "MacBook_Air_local_ek2" a6e26735-1a58-41c4-81c3-87e39e9255fd
+2016-07-28T11:37:55.138048000 1.502707s info: Table 5fcf6f4e-d4c4-4d9e-bcb7-ae0054592d6e: Starting a new Raft election for term 2.
+2016-07-28T11:37:55.146775000 1.511434s info: Table 5fcf6f4e-d4c4-4d9e-bcb7-ae0054592d6e: This server is Raft leader for term 2. Latest log index is 3.
+2016-07-28T11:37:55.578191000 1.942801s info: Table 472f622c-cc82-40d3-83ca-448b29ce1790: Starting a new Raft election for term 2.
+2016-07-28T11:37:55.685037000 2.049646s info: Table 472f622c-cc82-40d3-83ca-448b29ce1790: This server is Raft leader for term 2. Latest log index is 3.
+2016-07-28T11:37:55.974039000 2.338649s info: Table 43bebe56-da6d-4785-9cd3-fed80a555b1a: Starting a new Raft election for term 2.
+2016-07-28T11:37:55.983557000 2.348166s info: Table 43bebe56-da6d-4785-9cd3-fed80a555b1a: This server is Raft leader for term 2. Latest log index is 4.
+2016-07-28T11:38:07.467220000 13.831280s notice: Removing file /Users/alexi2/Documents/Dropbox/Projects/SuperSearch/rethinkdb_data/43bebe56-da6d-4785-9cd3-fed80a555b1a
+2016-07-28T11:38:07.467233000 13.831293s info: Table 43bebe56-da6d-4785-9cd3-fed80a555b1a: Deleted the table.
+2016-07-28T11:38:07.493968000 13.858028s notice: Removing file /Users/alexi2/Documents/Dropbox/Projects/SuperSearch/rethinkdb_data/472f622c-cc82-40d3-83ca-448b29ce1790
+2016-07-28T11:38:07.493978000 13.858038s info: Table 472f622c-cc82-40d3-83ca-448b29ce1790: Deleted the table.
+2016-07-28T11:38:07.511984000 13.876044s notice: Removing file /Users/alexi2/Documents/Dropbox/Projects/SuperSearch/rethinkdb_data/5fcf6f4e-d4c4-4d9e-bcb7-ae0054592d6e
+2016-07-28T11:38:07.512000000 13.876060s info: Table 5fcf6f4e-d4c4-4d9e-bcb7-ae0054592d6e: Deleted the table.
+2016-07-28T11:38:26.835413000 33.198569s info: Table b58e8b17-a5a3-4d16-afc9-dc3bc8b564ad: Starting a new Raft election for term 1.
+2016-07-28T11:38:26.835584000 33.198740s info: Table b58e8b17-a5a3-4d16-afc9-dc3bc8b564ad: Added replica on this server.
+2016-07-28T11:38:26.851813000 33.214969s info: Table fe55717a-2cdb-414f-a85c-a5ec136aa17a: Starting a new Raft election for term 1.
+2016-07-28T11:38:26.852054000 33.215210s info: Table fe55717a-2cdb-414f-a85c-a5ec136aa17a: Added replica on this server.
+2016-07-28T11:38:26.856335000 33.219492s info: Table bb1d0a25-c7e3-4029-9e31-ee6f17ba0b17: Starting a new Raft election for term 1.
+2016-07-28T11:38:26.856789000 33.219945s info: Table bb1d0a25-c7e3-4029-9e31-ee6f17ba0b17: Added replica on this server.
+2016-07-28T11:38:26.866659000 33.229815s info: Table b58e8b17-a5a3-4d16-afc9-dc3bc8b564ad: This server is Raft leader for term 1. Latest log index is 0.
+2016-07-28T11:38:26.866770000 33.229926s info: Table fe55717a-2cdb-414f-a85c-a5ec136aa17a: This server is Raft leader for term 1. Latest log index is 0.
+2016-07-28T11:38:26.866830000 33.229986s info: Table bb1d0a25-c7e3-4029-9e31-ee6f17ba0b17: This server is Raft leader for term 1. Latest log index is 0.
+2016-07-28T11:38:27.406446000 33.769552s info: Table bb1d0a25-c7e3-4029-9e31-ee6f17ba0b17: Configuration is changing.
+2016-07-28T11:55:10.909703000 1037.229574s notice: Removing file /Users/alexi2/Documents/Dropbox/Projects/SuperSearch/rethinkdb_data/b58e8b17-a5a3-4d16-afc9-dc3bc8b564ad
+2016-07-28T11:55:10.909723000 1037.229593s info: Table b58e8b17-a5a3-4d16-afc9-dc3bc8b564ad: Deleted the table.
+2016-07-28T11:55:10.932031000 1037.251901s notice: Removing file /Users/alexi2/Documents/Dropbox/Projects/SuperSearch/rethinkdb_data/bb1d0a25-c7e3-4029-9e31-ee6f17ba0b17
+2016-07-28T11:55:10.932042000 1037.251911s info: Table bb1d0a25-c7e3-4029-9e31-ee6f17ba0b17: Deleted the table.
+2016-07-28T11:55:10.951275000 1037.271146s notice: Removing file /Users/alexi2/Documents/Dropbox/Projects/SuperSearch/rethinkdb_data/fe55717a-2cdb-414f-a85c-a5ec136aa17a
+2016-07-28T11:55:10.951292000 1037.271162s info: Table fe55717a-2cdb-414f-a85c-a5ec136aa17a: Deleted the table.
+2016-07-28T11:56:07.862370000 1094.179690s info: Table bc6e83d1-662f-46da-a65f-c3416b018a9d: Starting a new Raft election for term 1.
+2016-07-28T11:56:07.866182000 1094.183502s info: Table bc6e83d1-662f-46da-a65f-c3416b018a9d: Added replica on this server.
+2016-07-28T11:56:07.876293000 1094.193613s info: Table 808447e1-d822-49ad-860f-980d09bb2a27: Starting a new Raft election for term 1.
+2016-07-28T11:56:07.876616000 1094.193936s info: Table 808447e1-d822-49ad-860f-980d09bb2a27: Added replica on this server.
+2016-07-28T11:56:07.879331000 1094.196651s info: Table 711564ac-aa1a-47fa-a709-972b958e5220: Starting a new Raft election for term 1.
+2016-07-28T11:56:07.879560000 1094.196880s info: Table 711564ac-aa1a-47fa-a709-972b958e5220: Added replica on this server.
+2016-07-28T11:56:07.891159000 1094.208479s info: Table bc6e83d1-662f-46da-a65f-c3416b018a9d: This server is Raft leader for term 1. Latest log index is 0.
+2016-07-28T11:56:07.891250000 1094.208569s info: Table 808447e1-d822-49ad-860f-980d09bb2a27: This server is Raft leader for term 1. Latest log index is 0.
+2016-07-28T11:56:07.894881000 1094.212201s info: Table 711564ac-aa1a-47fa-a709-972b958e5220: This server is Raft leader for term 1. Latest log index is 0.
+2016-07-28T11:56:08.400734000 1094.718054s info: Table 808447e1-d822-49ad-860f-980d09bb2a27: Configuration is changing.
+2016-07-28T13:22:25.946221000 6272.041725s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:22:28.075458000 6274.170864s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:22:30.088978000 6276.184291s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:22:32.102262000 6278.197483s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:22:34.116675000 6280.211802s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:22:36.129788000 6282.224822s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:22:38.147193000 6284.242133s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:22:40.173353000 6286.268200s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:22:42.191180000 6288.285979s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:22:44.204810000 6290.299515s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:22:46.221493000 6292.316105s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:22:48.233712000 6294.328230s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:22:50.245689000 6296.340113s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:22:52.350488000 6298.444818s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:22:54.372608000 6300.466844s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:22:56.388823000 6302.482965s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:22:58.402183000 6304.496231s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:23:00.418108000 6306.512062s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:23:05.334355000 6311.428125s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:23:10.415493000 6316.509050s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:23:13.096028000 6319.189457s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:23:15.109339000 6321.202681s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:23:17.123496000 6323.216795s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:23:19.173876000 6325.267090s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:23:21.218944000 6327.312071s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:23:23.234888000 6329.327929s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:23:25.248315000 6331.341271s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:23:27.260413000 6333.353282s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:23:29.279970000 6335.372753s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:23:31.294626000 6337.387322s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:23:33.307597000 6339.400208s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:23:35.323954000 6341.416478s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:23:37.339678000 6343.432158s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:23:39.690638000 6345.782989s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:23:41.704978000 6347.797285s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:23:43.718957000 6349.811177s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:23:45.731948000 6351.824082s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:23:48.041442000 6354.133446s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:23:50.054823000 6356.146783s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:23:52.075310000 6358.167183s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:23:54.090478000 6360.182264s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:23:56.104981000 6362.196680s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:24:00.552900000 6366.644425s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:24:05.448205000 6371.539511s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:24:10.413777000 6376.504865s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:24:12.466110000 6378.557110s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:24:14.495794000 6380.586706s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:24:16.527923000 6382.618746s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:24:18.540882000 6384.631661s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:24:20.556358000 6386.647049s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:24:22.579595000 6388.670199s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:24:24.592143000 6390.682659s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:24:29.501613000 6395.591908s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:24:34.456279000 6400.546397s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:24:38.384112000 6404.474053s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:24:40.408913000 6406.498765s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:24:42.421227000 6408.510991s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:24:44.434897000 6410.524572s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:24:46.446447000 6412.536033s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:24:48.458864000 6414.548362s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:24:50.481231000 6416.570684s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:24:52.495177000 6418.584541s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:24:54.507565000 6420.596839s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:24:56.522698000 6422.611883s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:24:58.901002000 6424.990098s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:25:01.101538000 6427.190545s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:25:03.229521000 6429.318438s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:25:05.242339000 6431.331167s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:25:07.256731000 6433.345471s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:25:09.274055000 6435.362704s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:25:11.291912000 6437.380471s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:25:13.306195000 6439.394666s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:25:15.320005000 6441.408385s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:25:17.332931000 6443.421221s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:25:19.349260000 6445.437506s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:25:21.365855000 6447.454010s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:25:23.393346000 6449.481411s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:25:25.405591000 6451.493567s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:25:27.420179000 6453.508064s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:25:29.532927000 6455.620723s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:25:31.547307000 6457.635013s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:25:33.563645000 6459.651259s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:25:35.591405000 6461.678929s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:25:37.608017000 6463.695451s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:25:39.625000000 6465.712344s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:25:44.097827000 6470.184989s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:25:50.348003000 6476.434893s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:25:55.423131000 6481.509793s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:26:00.450025000 6486.536505s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:26:05.355000000 6491.441253s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:26:10.423260000 6496.509283s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:26:15.465193000 6501.550988s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:26:20.410656000 6506.496268s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:26:24.136642000 6510.222069s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:26:26.153887000 6512.239222s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:26:28.171593000 6514.256836s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:26:30.201840000 6516.287038s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:26:32.214962000 6518.300067s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:26:34.229422000 6520.314435s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:26:37.052960000 6523.137835s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:26:39.065368000 6525.150150s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:26:41.092485000 6527.177176s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:26:43.114641000 6529.199239s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:26:45.131205000 6531.215710s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:26:47.155727000 6533.240186s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:26:49.180057000 6535.264423s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:26:51.209437000 6537.293711s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:26:53.229113000 6539.313295s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:26:55.248151000 6541.332239s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:26:57.268945000 6543.352940s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:26:59.293956000 6545.377859s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:27:01.313510000 6547.397320s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:27:03.327000000 6549.410717s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:27:05.341016000 6551.424640s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:27:07.355166000 6553.438743s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:27:12.118508000 6558.201852s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:27:17.424886000 6563.507997s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:27:22.433582000 6568.516459s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:27:27.410097000 6573.492787s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:27:33.601651000 6579.684060s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:27:38.446170000 6584.528343s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:27:43.410131000 6589.492117s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:27:48.460037000 6594.541787s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:27:53.462753000 6599.544268s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:27:58.098050000 6604.179375s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:28:03.473735000 6609.554824s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:28:08.458845000 6614.539696s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:28:13.378305000 6619.458919s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:28:19.637749000 6625.718079s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:28:24.430859000 6630.510998s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:28:29.349589000 6635.429490s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:28:34.477522000 6640.557184s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:28:39.447818000 6645.527288s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:28:44.449006000 6650.528237s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:28:49.470729000 6655.549720s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:28:54.207566000 6660.286365s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:28:59.338207000 6665.416766s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:29:04.465345000 6670.543665s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:29:09.428803000 6675.506881s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:29:14.207933000 6680.285819s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:29:20.347515000 6686.425110s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:29:25.449256000 6691.526609s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:29:30.205030000 6696.282141s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:29:35.460130000 6701.536998s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:29:40.470711000 6706.547385s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:29:46.583848000 6712.660230s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:29:51.411444000 6717.487582s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:29:56.488498000 6722.564392s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:30:01.596368000 6727.672019s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:30:06.409601000 6732.485056s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:30:11.419464000 6737.494674s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:30:16.594282000 6742.669247s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:30:21.466165000 6747.540933s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:30:26.433703000 6752.508226s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:30:31.466080000 6757.540358s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:30:36.449339000 6762.523379s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:30:41.447819000 6767.521652s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:30:46.463000000 6772.536587s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:30:51.411033000 6777.484372s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:30:56.441821000 6782.514964s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:31:01.419978000 6787.492871s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:31:06.437390000 6792.510035s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:31:11.476778000 6797.549175s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:31:16.475464000 6802.547662s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:31:21.487905000 6807.559854s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:31:26.411964000 6812.483665s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:31:31.478831000 6817.550281s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:31:36.436258000 6822.507509s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:31:41.477922000 6827.548922s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:31:44.130263000 6830.201163s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:31:46.146172000 6832.216972s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:31:48.162470000 6834.233170s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:31:50.179265000 6836.249866s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:31:52.197980000 6838.268481s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T13:31:54.233903000 6840.304302s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-07-28T17:59:48.341663000 22913.699955s notice: Removing file /Users/alexi2/Documents/Dropbox/Projects/SuperSearch/rethinkdb_data/711564ac-aa1a-47fa-a709-972b958e5220
+2016-07-28T17:59:48.341677000 22913.699967s info: Table 711564ac-aa1a-47fa-a709-972b958e5220: Deleted the table.
+2016-07-28T17:59:48.371015000 22913.729306s notice: Removing file /Users/alexi2/Documents/Dropbox/Projects/SuperSearch/rethinkdb_data/808447e1-d822-49ad-860f-980d09bb2a27
+2016-07-28T17:59:48.371029000 22913.729319s info: Table 808447e1-d822-49ad-860f-980d09bb2a27: Deleted the table.
+2016-07-28T17:59:48.410234000 22913.768524s notice: Removing file /Users/alexi2/Documents/Dropbox/Projects/SuperSearch/rethinkdb_data/bc6e83d1-662f-46da-a65f-c3416b018a9d
+2016-07-28T17:59:48.410250000 22913.768540s info: Table bc6e83d1-662f-46da-a65f-c3416b018a9d: Deleted the table.
+2016-07-28T18:00:09.767536000 22935.124843s info: Table 892710a3-29dd-4b58-9a4a-056b1a5ffa40: Starting a new Raft election for term 1.
+2016-07-28T18:00:09.772007000 22935.129315s info: Table 892710a3-29dd-4b58-9a4a-056b1a5ffa40: Added replica on this server.
+2016-07-28T18:00:09.787459000 22935.144766s info: Table 88ecceec-59e3-493a-b525-d6224330b777: Starting a new Raft election for term 1.
+2016-07-28T18:00:09.787971000 22935.145278s info: Table 88ecceec-59e3-493a-b525-d6224330b777: Added replica on this server.
+2016-07-28T18:00:09.806009000 22935.163316s info: Table 320639a2-f284-4bfb-8923-44426d304be7: Starting a new Raft election for term 1.
+2016-07-28T18:00:09.807012000 22935.164319s info: Table 320639a2-f284-4bfb-8923-44426d304be7: Added replica on this server.
+2016-07-28T18:00:09.821789000 22935.179096s info: Table 892710a3-29dd-4b58-9a4a-056b1a5ffa40: This server is Raft leader for term 1. Latest log index is 0.
+2016-07-28T18:00:09.821866000 22935.179173s info: Table 88ecceec-59e3-493a-b525-d6224330b777: This server is Raft leader for term 1. Latest log index is 0.
+2016-07-28T18:00:09.821964000 22935.179271s info: Table 320639a2-f284-4bfb-8923-44426d304be7: This server is Raft leader for term 1. Latest log index is 0.
+2016-07-28T18:00:10.328922000 22935.686229s info: Table 88ecceec-59e3-493a-b525-d6224330b777: Configuration is changing.
+2016-07-28T22:34:12.744705000 39377.330736s notice: Removing file /Users/alexi2/Documents/Dropbox/Projects/SuperSearch/rethinkdb_data/320639a2-f284-4bfb-8923-44426d304be7
+2016-07-28T22:34:12.744729000 39377.330745s info: Table 320639a2-f284-4bfb-8923-44426d304be7: Deleted the table.
+2016-07-28T22:34:12.781299000 39377.367267s notice: Removing file /Users/alexi2/Documents/Dropbox/Projects/SuperSearch/rethinkdb_data/88ecceec-59e3-493a-b525-d6224330b777
+2016-07-28T22:34:12.781316000 39377.367282s info: Table 88ecceec-59e3-493a-b525-d6224330b777: Deleted the table.
+2016-07-28T22:34:12.809347000 39377.395314s notice: Removing file /Users/alexi2/Documents/Dropbox/Projects/SuperSearch/rethinkdb_data/892710a3-29dd-4b58-9a4a-056b1a5ffa40
+2016-07-28T22:34:12.809362000 39377.395329s info: Table 892710a3-29dd-4b58-9a4a-056b1a5ffa40: Deleted the table.
+2016-07-28T22:34:43.452889000 39408.037400s info: Table 30107ee7-76ec-4832-95b3-64df2c64debd: Starting a new Raft election for term 1.
+2016-07-28T22:34:43.466376000 39408.050883s info: Table 30107ee7-76ec-4832-95b3-64df2c64debd: Added replica on this server.
+2016-07-28T22:34:43.469689000 39408.054196s info: Table 6e27e2a3-41e8-44d0-9c54-fcc155ff9ea6: Starting a new Raft election for term 1.
+2016-07-28T22:34:43.469842000 39408.054349s info: Table 6e27e2a3-41e8-44d0-9c54-fcc155ff9ea6: Added replica on this server.
+2016-07-28T22:34:43.469889000 39408.054396s info: Table 1a442097-14ce-4429-90b9-5ffd2b37c63d: Starting a new Raft election for term 1.
+2016-07-28T22:34:43.470341000 39408.054848s info: Table 1a442097-14ce-4429-90b9-5ffd2b37c63d: Added replica on this server.
+2016-07-28T22:34:43.502633000 39408.087140s info: Table 30107ee7-76ec-4832-95b3-64df2c64debd: This server is Raft leader for term 1. Latest log index is 0.
+2016-07-28T22:34:43.518994000 39408.103501s info: Table 6e27e2a3-41e8-44d0-9c54-fcc155ff9ea6: This server is Raft leader for term 1. Latest log index is 0.
+2016-07-28T22:34:43.519079000 39408.103585s info: Table 1a442097-14ce-4429-90b9-5ffd2b37c63d: This server is Raft leader for term 1. Latest log index is 0.
+2016-07-28T22:34:44.043476000 39408.627983s info: Table 30107ee7-76ec-4832-95b3-64df2c64debd: Configuration is changing.
+2016-07-29T18:47:43.163181000 86023.602659s notice: Server got SIGINT from pid 526, uid 501; shutting down...
+2016-07-29T18:47:43.165205000 86023.604680s notice: Shutting down client connections...
+2016-07-29T18:47:43.166816000 86023.606291s notice: All client connections closed.
+2016-07-29T18:47:43.166823000 86023.606297s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2016-07-29T18:47:43.280709000 86023.720184s notice: Storage engine shut down.
+2016-07-29T19:21:08.287557000 0.344931s notice: Running rethinkdb 2.3.4 (CLANG 7.3.0 (clang-703.0.31))...
+2016-07-29T19:21:08.346758000 0.404132s notice: Running on Darwin 15.6.0 x86_64
+2016-07-29T19:21:08.347041000 0.404410s notice: Loading data from directory /Users/alexi2/Documents/Dropbox/Projects/SuperSearch/rethinkdb_data
+2016-07-29T19:21:08.399285000 0.456654s info: Automatically using cache size of 100 MB
+2016-07-29T19:21:08.399342000 0.456711s warn: Cache size does not leave much memory for server and query overhead (available memory: 478 MB).
+2016-07-29T19:21:08.399351000 0.456719s warn: Cache size is very low and may impact performance.
+2016-07-29T19:21:08.401329000 0.458698s notice: Listening for intracluster connections on port 29015
+2016-07-29T19:21:08.639056000 0.696424s notice: Listening for client driver connections on port 28015
+2016-07-29T19:21:08.639481000 0.696850s notice: Listening for administrative HTTP connections on port 8080
+2016-07-29T19:21:08.639486000 0.696854s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2016-07-29T19:21:08.639490000 0.696858s notice: Listening on driver addresses: 127.0.0.1, ::1
+2016-07-29T19:21:08.639537000 0.696905s notice: Listening on http addresses: 127.0.0.1, ::1
+2016-07-29T19:21:08.639542000 0.696910s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-07-29T19:21:08.639545000 0.696913s notice: Server ready, "MacBook_Air_local_ek2" a6e26735-1a58-41c4-81c3-87e39e9255fd
+2016-07-29T19:21:10.176166000 2.233452s info: Table 6e27e2a3-41e8-44d0-9c54-fcc155ff9ea6: Starting a new Raft election for term 2.
+2016-07-29T19:21:10.199706000 2.256953s info: Table 6e27e2a3-41e8-44d0-9c54-fcc155ff9ea6: This server is Raft leader for term 2. Latest log index is 3.
+2016-07-29T19:21:10.416481000 2.473686s info: Table 1a442097-14ce-4429-90b9-5ffd2b37c63d: Starting a new Raft election for term 2.
+2016-07-29T19:21:10.434289000 2.491493s info: Table 1a442097-14ce-4429-90b9-5ffd2b37c63d: This server is Raft leader for term 2. Latest log index is 3.
+2016-07-29T19:21:10.506114000 2.563318s info: Table 30107ee7-76ec-4832-95b3-64df2c64debd: Starting a new Raft election for term 2.
+2016-07-29T19:21:10.527270000 2.584474s info: Table 30107ee7-76ec-4832-95b3-64df2c64debd: This server is Raft leader for term 2. Latest log index is 4.
+2016-07-30T12:25:09.029716000 35814.660173s notice: Server got SIGINT from pid 526, uid 501; shutting down...
+2016-07-30T12:25:09.031956000 35814.662410s notice: Shutting down client connections...
+2016-07-30T12:25:09.034735000 35814.665189s notice: All client connections closed.
+2016-07-30T12:25:09.034753000 35814.665206s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2016-07-30T12:25:09.107005000 35814.737459s notice: Storage engine shut down.

@@ -1,0 +1,14 @@
+export const AUTH_USER = 'auth_user';
+export const UNAUTH_USER = 'unauth_user';
+export const AUTH_ERROR = 'auth_error';
+export const FETCH_DATA = 'fetch_data';
+export const SUBMIT_DATA = 'submit_data';
+export const DELETE_DATA = 'delete_data';
+export const GET_COMMENT_DATA = 'get_comment_data';
+export const UPDATE_COMMENT_DATA = 'update_comment_data';
+export const DELETE_COMMENT = 'delete_comment';
+export const ADD_IMAGE_URL = 'add_image_url';
+export const CLEAR_SUBMIT_COMPONENT = 'clear_submit_component';
+export const DELETE_SUBMISSION = 'delete_submission';
+export const VOTE_ON_POST = 'vote_on_post';
+export const GET_USER_PROFILE = 'get_user_profile';
