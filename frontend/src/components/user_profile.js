@@ -4,11 +4,17 @@ import * as actions from '../actions';
 import toastr from 'toastr'
 import UserVoteTrends from './user_vote_trends';
 import EditUserBio from './data/edit_user_bio';
+import SearchResultsList from './data/search_result_list'
 
 class UserProfile extends Component {
 
   componentWillMount() {
     this.props.getUserProfile();
+  }
+
+  componentWillUpdate(nextProps) {
+    const email = nextProps.user.data.email;
+    this.props.readData({type: 'email', email})
   }
 
   static countVotes(votes) {
@@ -42,6 +48,8 @@ class UserProfile extends Component {
               </div>
           </div>
           <UserVoteTrends data={user.votes} color="blue" />
+          <h3 className="center-text">My Posts</h3>
+          <SearchResultsList />
         </div>
       );
     } else {
@@ -53,7 +61,8 @@ class UserProfile extends Component {
 
 function mapStateToProps (state) {
   return {
-    user: state.auth.user
+    user: state.auth.user,
+    message: state.auth.message
   }
 }
 

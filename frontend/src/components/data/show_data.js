@@ -8,11 +8,11 @@ import toastr from 'toastr';
 class ShowData extends Component {
 
   componentWillMount() {
-    this.props.getCommentData(this.props.params.id);
+    this.props.readDataWithComments(this.props.params.id);
   }
 
   addComment({ comment }) {
-    this.props.addCommentData(this.props.msgComments.data.id, comment);
+    this.props.createCommentForData(this.props.msgComments.data.id, comment);
     this.props.resetForm();
     toastr.success('Comment Saved');
   }
@@ -23,7 +23,7 @@ class ShowData extends Component {
   }
 
   vote(message, voteType) {
-    this.props.voteOnPost(message.id, voteType);
+    this.props.voteOnData(message.id, voteType);
   }
 
   countVotes(votes) {

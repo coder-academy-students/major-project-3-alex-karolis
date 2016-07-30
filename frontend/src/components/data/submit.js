@@ -10,7 +10,7 @@ class Submit extends Component {
 
   static handleFormSubmit({title, post}) {
     const image = this.props.imageSubmission;
-    this.props.submitData(title, post, image);
+    this.props.createData(title, post, image);
     this.props.resetForm();
     this.props.clearSubmitComponent();
   }

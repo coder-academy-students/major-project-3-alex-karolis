@@ -9,7 +9,7 @@ class EditData extends Component {
 
   handleEditorChange(post) {
     const postId = this.props.msgComments.data.id;
-    this.props.updatePost(postId, post.target.getContent());
+    this.props.updateData(postId, post.target.getContent());
     toastr.success('Your post has been updated.')
   }
 
@@ -53,7 +53,7 @@ export default connect(mapStateToProps, actions)(EditData);
 //
 //   static handleFormSubmit({post}) {
 //     const postId = this.props.msgComments.data.id;
-//     this.props.updatePost(postId, post);
+//     this.props.updateData(postId, post);
 //     toastr.success('Your update has been saved.');
 //   }
 //

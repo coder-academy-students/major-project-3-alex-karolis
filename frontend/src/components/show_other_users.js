@@ -1,14 +1,16 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import * as actions from '../actions';
-import UserVoteTrends from './user_vote_trends';
-import toastr from 'toastr';
-import TinyMCE from 'react-tinymce';
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import * as actions from '../actions'
+import UserVoteTrends from './user_vote_trends'
+import SearchResultsList from './data/search_result_list'
+import toastr from 'toastr'
+import TinyMCE from 'react-tinymce'
 
 class Users extends Component {
 
   componentWillMount() {
     this.props.getUserProfile(this.props.params.email);
+    this.props.readData({type: 'email', email: this.props.params.email});
   }
 
   static countVotes(votes) {
@@ -50,6 +52,8 @@ class Users extends Component {
             </div>
           </div>
           <UserVoteTrends data={user.votes} color="blue" />
+          <h3 className="center-text">{user.firstname}'s Posts</h3>
+          <SearchResultsList />
         </div>
       );
     } else {
@@ -60,7 +64,10 @@ class Users extends Component {
 }
 
 function mapStateToProps(state) {
-  return { user: state.auth.user };
+  return {
+    user: state.auth.user,
+    message: state.auth.message
+  };
 }
 
 export default connect(mapStateToProps, actions)(Users)

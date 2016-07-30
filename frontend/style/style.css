@@ -28,7 +28,11 @@ td { width: calc(100%/4) !important; }
     text-align: center;
     color: #2f6fad;
 }
-.center-text { text-align: center; }
+.center-text {
+    text-align: center;
+    margin-top: 50px;
+    color: #2f6fad;
+}
 
 .error { color: red; }
 

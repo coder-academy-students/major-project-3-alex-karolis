@@ -135,27 +135,9 @@ export function updateUserProfile(bio) {
 
 // DATA CRUD ---------------------------------------------------
 
-// FETCH DATA
+// CREATE DATA
 
-export function fetchData({type, terms}) {
-  return function(dispatch) {
-    axios.post(`${API_URL}/datasearch`, {
-      type, terms
-    }, {
-      headers: { authorization: localStorage.getItem('token') }
-    })
-      .then(response => {
-        dispatch({
-          type: FETCH_DATA,
-          payload: response.data
-        })
-      });
-  }
-}
-
-// SUBMIT DATA
-
-export function submitData( title, post, image ) {
+export function createData( title, post, image ) {
 
   return function(dispatch) {
     axios.post(`${API_URL}/datasave`, {
@@ -172,9 +154,27 @@ export function submitData( title, post, image ) {
   }
 }
 
+// READ DATA
+
+export function readData({type, terms}) {
+  return function(dispatch) {
+    axios.post(`${API_URL}/datasearch`, {
+      type, terms
+    }, {
+      headers: { authorization: localStorage.getItem('token') }
+    })
+      .then(response => {
+        dispatch({
+          type: FETCH_DATA,
+          payload: response.data
+        })
+      });
+  }
+}
+
 // UPDATE DATA
 
-export function updatePost(postId, postText) {
+export function updateData(postId, postText) {
   return function(dispatch) {
     axios.post(`${API_URL}/dataupdate`, {
       postId,
@@ -193,6 +193,7 @@ export function updatePost(postId, postText) {
 
 // DELETE DATA
 
+// function to delete data when state does not contain comments, in submit.js
 export function deleteSubmission(result) {
   return function(dispatch) {
     axios.post(`${API_URL}/datadelete`, {
@@ -229,7 +230,7 @@ export function deleteData(result) {
 
 // GET COMMENTS FOR POST
 
-export function getCommentData(postId) {
+export function readDataWithComments(postId) {
   return function(dispatch) {
     axios.post(`${API_URL}/datacommentget`, {
       postId
@@ -247,7 +248,7 @@ export function getCommentData(postId) {
 
 // ADD COMMENT TO POST
 
-export function addCommentData(postId, comment) {
+export function createCommentForData(postId, comment) {
   return function(dispatch) {
     axios.post(`${API_URL}/datacommentsave`, {
       postId,
@@ -320,7 +321,7 @@ export function clearSubmitComponent() {
 
 // VOTE ON DATA ------------------------------------------------------------
 
-export function voteOnPost(postId, voteType) {
+export function voteOnData(postId, voteType) {
   return function(dispatch) {
     axios.post(`${API_URL}/datavote`, {
       postId,

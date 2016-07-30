@@ -6,7 +6,7 @@ import SearchResultList from './search_result_list';
 class Search extends Component {
 
   static handleFormSubmit({type, terms}) {
-    this.props.fetchData({type, terms});
+    this.props.readData({type, terms});
     const search = this.props.fields;
     search.type.value = '';
     search.terms.value = '';

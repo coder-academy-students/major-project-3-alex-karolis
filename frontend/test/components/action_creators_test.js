@@ -104,7 +104,7 @@ describe('Action Creators', () => {
   describe('Fetch Data', () => {
     it('gets the data from the api', () => {
       nock('http://example.com')
-        .post('/fetchdata', { headers: { authorization: 'token' }})
+        .post('/readData', { headers: { authorization: 'token' }})
         .reply(201, { body: { data: 'data' }});
 
       const expectedAction = [
@@ -116,7 +116,7 @@ describe('Action Creators', () => {
           done();
         }
       }
-      actions.fetchData(mockDispatch)
+      actions.readData(mockDispatch)
     });
   });
   // SUBMIT DATA
@@ -135,7 +135,7 @@ describe('Action Creators', () => {
           done();
         }
       }
-      actions.submitData(mockDispatch)
+      actions.createData(mockDispatch)
     });
   });
   // UPDATE DATA
@@ -154,7 +154,7 @@ describe('Action Creators', () => {
           done();
         }
       }
-      actions.updatePost(mockDispatch)
+      actions.updateData(mockDispatch)
     });
   });
   // DELETE DATA
@@ -192,7 +192,7 @@ describe('Action Creators', () => {
           done();
         }
       }
-      actions.getCommentData(mockDispatch)
+      actions.readDataWithComments(mockDispatch)
     });
   });
   // ADD COMMENT
@@ -211,7 +211,7 @@ describe('Action Creators', () => {
           done();
         }
       }
-      actions.addCommentData(mockDispatch)
+      actions.createCommentForData(mockDispatch)
     });
   });
 });

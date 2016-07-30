@@ -6,7 +6,7 @@ import * as actions from '../actions';
 class Welcome extends Component  {
 
   componentWillMount() {
-    this.props.fetchData({type: 'recent', terms: ''});
+    this.props.readData({type: 'recent', terms: ''});
   }
 
   render () {
