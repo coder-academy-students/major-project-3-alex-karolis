@@ -53,7 +53,7 @@ export function signinUser({ email, password }) {
   };
 }
 
-// SIGNOUT USER
+// SIGN UP USER
 
 export function signupUser({ email, password, firstname, lastname, bio} ,{ image }) {
 
