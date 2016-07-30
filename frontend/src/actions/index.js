@@ -20,6 +20,10 @@ import {
 
 const API_URL = 'http://localhost:3090';
 
+// USER CRUD ------------------------------------------------------------------
+
+// SIGN IN USER
+
 export function signinUser({ email, password }) {
 
   // This is how we get direct access to the dispatch function in Redux
@@ -49,6 +53,8 @@ export function signinUser({ email, password }) {
   };
 }
 
+// SIGNOUT USER
+
 export function signupUser({ email, password, firstname, lastname, bio} ,{ image }) {
 
   // Use redux-thunk
@@ -73,6 +79,8 @@ export function signupUser({ email, password, firstname, lastname, bio} ,{ image
   }
 }
 
+// RETURN AUTHORIZATION ERROR
+
 export function authError(error) {
   return {
     type: AUTH_ERROR,
@@ -80,196 +88,13 @@ export function authError(error) {
   };
 }
 
+// SIGN OUT USER
+
 export function signoutUser() {
   // delete localStorage
   localStorage.removeItem('token');
   // run action
   return { type: UNAUTH_USER };
-}
-
-// Make API request to root url of api
-export function fetchData({type, terms}) {
-  return function(dispatch) {
-    axios.post(`${API_URL}/datasearch`, {
-      type, terms
-    }, {
-      headers: { authorization: localStorage.getItem('token') }
-    })
-      .then(response => {
-        dispatch({
-          type: FETCH_DATA,
-          payload: response.data
-        })
-      });
-  }
-}
-
-// DATA CRUD ---------------------------------------------------
-
-export function submitData( title, post, image ) {
-
-  return function(dispatch) {
-    axios.post(`${API_URL}/datasave`, {
-      title, post, image
-    }, {
-      headers: { authorization: localStorage.getItem('token') }
-    })
-      .then(response => {
-        dispatch({
-          type: SUBMIT_DATA,
-          payload: response.data
-        })
-      })
-  }
-}
-
-export function deleteSubmission(result) {
-  return function(dispatch) {
-    axios.post(`${API_URL}/datadelete`, {
-      id: result.id
-    }, {
-      headers: { authorization: localStorage.getItem('token') }
-    })
-      .then(() => {
-        dispatch({
-          type: DELETE_SUBMISSION,
-          payload: result
-        });
-      });
-  }
-}
-
-export function deleteData(result) {
-  return function(dispatch) {
-    axios.post(`${API_URL}/datadelete`, {
-      id: result.id
-    }, {
-      headers: { authorization: localStorage.getItem('token') }
-    })
-      .then(() => {
-        dispatch({
-          type: DELETE_DATA,
-          payload: result
-        });
-      });
-  }
-}
-
-export function updatePost(postId, postText) {
-  return function(dispatch) {
-    axios.post(`${API_URL}/dataupdate`, {
-      postId,
-      postText
-    }, {
-      headers: { authorization: localStorage.getItem('token') }
-    })
-      .then(result => {
-        dispatch({
-          type: UPDATE_COMMENT_DATA,
-          payload: result
-        });
-      });
-  }
-}
-
-// COMMENTS CRUD ---------------------------------------------------
-
-export function getCommentData(postId) {
-  return function(dispatch) {
-    axios.post(`${API_URL}/datacommentget`, {
-      postId
-    }, {
-      headers: { authorization: localStorage.getItem('token') }
-    })
-    .then(result => {
-      dispatch({
-        type: GET_COMMENT_DATA,
-        payload: result
-      });
-    });
-  }
-}
-
-export function addCommentData(postId, comment) {
-  return function(dispatch) {
-    axios.post(`${API_URL}/datacommentsave`, {
-      postId,
-      comment
-      },{
-        headers: { authorization: localStorage.getItem('token') }
-      })
-      .then(result => {
-        dispatch({
-          type: UPDATE_COMMENT_DATA,
-          payload: result
-        });
-      });
-  }
-}
-
-export function deleteComment(commentId) {
-  return function(dispatch) {
-    axios.post(`${API_URL}/datacommentdelete`, {
-      commentId
-    },{
-      headers: { authorization: localStorage.getItem('token') }
-    })
-      .then(result => {
-        dispatch({
-          // add if result true/false to change payload
-          type: DELETE_COMMENT,
-          payload: commentId
-        });
-      })
-  }
-}
-
-export function setImage(files) {
-  const public_key = 'pk-test-ds1izdgdjeb5jeurr8m6gnip';
-  var ospry = new Ospry(public_key);
-
-  return function (dispatch) {
-    ospry.up({
-      files,
-      imageReady: function(err, metadata, i) {
-        if (err === null) {
-          dispatch({
-            type: ADD_IMAGE_URL,
-            payload: metadata.url
-          });
-        } else {
-          console.log('upload error', err);
-        }
-      }
-    });
-  }
-}
-
-export function clearSubmitComponent() {
-  return function(dispatch) {
-    dispatch({
-      type: CLEAR_SUBMIT_COMPONENT,
-      payload: []
-    });
-
-  }
-}
-
-export function voteOnPost(postId, voteType) {
-  return function(dispatch) {
-    axios.post(`${API_URL}/datavote`, {
-      postId,
-      voteType
-    },{
-      headers: { authorization: localStorage.getItem('token') }
-    })
-      .then(result => {
-        dispatch({
-          type: VOTE_ON_POST,
-          payload: result
-        })
-      })
-  }
 }
 
 // GET USER PROFILE
@@ -305,5 +130,209 @@ export function updateUserProfile(bio) {
           payload: result
         });
       });
+  }
+}
+
+// DATA CRUD ---------------------------------------------------
+
+// FETCH DATA
+
+export function fetchData({type, terms}) {
+  return function(dispatch) {
+    axios.post(`${API_URL}/datasearch`, {
+      type, terms
+    }, {
+      headers: { authorization: localStorage.getItem('token') }
+    })
+      .then(response => {
+        dispatch({
+          type: FETCH_DATA,
+          payload: response.data
+        })
+      });
+  }
+}
+
+// SUBMIT DATA
+
+export function submitData( title, post, image ) {
+
+  return function(dispatch) {
+    axios.post(`${API_URL}/datasave`, {
+      title, post, image
+    }, {
+      headers: { authorization: localStorage.getItem('token') }
+    })
+      .then(response => {
+        dispatch({
+          type: SUBMIT_DATA,
+          payload: response.data
+        })
+      })
+  }
+}
+
+// UPDATE DATA
+
+export function updatePost(postId, postText) {
+  return function(dispatch) {
+    axios.post(`${API_URL}/dataupdate`, {
+      postId,
+      postText
+    }, {
+      headers: { authorization: localStorage.getItem('token') }
+    })
+      .then(result => {
+        dispatch({
+          type: UPDATE_COMMENT_DATA,
+          payload: result
+        });
+      });
+  }
+}
+
+// DELETE DATA
+
+export function deleteSubmission(result) {
+  return function(dispatch) {
+    axios.post(`${API_URL}/datadelete`, {
+      id: result.id
+    }, {
+      headers: { authorization: localStorage.getItem('token') }
+    })
+      .then(() => {
+        dispatch({
+          type: DELETE_SUBMISSION,
+          payload: result
+        });
+      });
+  }
+}
+
+export function deleteData(result) {
+  return function(dispatch) {
+    axios.post(`${API_URL}/datadelete`, {
+      id: result.id
+    }, {
+      headers: { authorization: localStorage.getItem('token') }
+    })
+      .then(() => {
+        dispatch({
+          type: DELETE_DATA,
+          payload: result
+        });
+      });
+  }
+}
+
+// COMMENTS CRUD ---------------------------------------------------
+
+// GET COMMENTS FOR POST
+
+export function getCommentData(postId) {
+  return function(dispatch) {
+    axios.post(`${API_URL}/datacommentget`, {
+      postId
+    }, {
+      headers: { authorization: localStorage.getItem('token') }
+    })
+    .then(result => {
+      dispatch({
+        type: GET_COMMENT_DATA,
+        payload: result
+      });
+    });
+  }
+}
+
+// ADD COMMENT TO POST
+
+export function addCommentData(postId, comment) {
+  return function(dispatch) {
+    axios.post(`${API_URL}/datacommentsave`, {
+      postId,
+      comment
+      },{
+        headers: { authorization: localStorage.getItem('token') }
+      })
+      .then(result => {
+        dispatch({
+          type: UPDATE_COMMENT_DATA,
+          payload: result
+        });
+      });
+  }
+}
+
+// DELETE COMMENT FROM POST
+
+export function deleteComment(commentId) {
+  return function(dispatch) {
+    axios.post(`${API_URL}/datacommentdelete`, {
+      commentId
+    },{
+      headers: { authorization: localStorage.getItem('token') }
+    })
+      .then(result => {
+        dispatch({
+          // add if result true/false to change payload
+          type: DELETE_COMMENT,
+          payload: commentId
+        });
+      })
+  }
+}
+
+// SUBMIT IMAGE TO OSPRY AND GET IMAGE URL ----------------------------------
+
+export function setImage(files) {
+  const public_key = 'pk-test-ds1izdgdjeb5jeurr8m6gnip';
+  var ospry = new Ospry(public_key);
+
+  return function (dispatch) {
+    ospry.up({
+      files,
+      imageReady: function(err, metadata, i) {
+        if (err === null) {
+          dispatch({
+            type: ADD_IMAGE_URL,
+            payload: metadata.url
+          });
+        } else {
+          console.log('upload error', err);
+        }
+      }
+    });
+  }
+}
+
+// CLEAR SUBMISSIONS FROM FORM --------------------------------------------
+
+export function clearSubmitComponent() {
+  return function(dispatch) {
+    dispatch({
+      type: CLEAR_SUBMIT_COMPONENT,
+      payload: []
+    });
+
+  }
+}
+
+// VOTE ON DATA ------------------------------------------------------------
+
+export function voteOnPost(postId, voteType) {
+  return function(dispatch) {
+    axios.post(`${API_URL}/datavote`, {
+      postId,
+      voteType
+    },{
+      headers: { authorization: localStorage.getItem('token') }
+    })
+      .then(result => {
+        dispatch({
+          type: VOTE_ON_POST,
+          payload: result
+        })
+      })
   }
 }
