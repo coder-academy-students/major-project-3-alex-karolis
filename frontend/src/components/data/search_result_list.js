@@ -25,6 +25,7 @@ class SearchResultList extends Component {
   listResults() {
     if (this.props.message) {
       return this.props.message.map(result => {
+        if (this.props.askingUser === 'all' || this.props.askingUser.email === result.email)
         return (
           <li key={result.id}
               className="list-group-item">
@@ -86,4 +87,4 @@ function mapStateToProps(state) {
   return { message: state.auth.message }
 }
 
-export default connect(mapStateToProps, actions)(SearchResultList);
+export default connect(null, actions)(SearchResultList);

@@ -10,7 +10,9 @@ class Users extends Component {
 
   componentWillMount() {
     this.props.getUserProfile(this.props.params.email);
-    this.props.readData({type: 'email', email: this.props.params.email});
+    this.setState({ auth: { message: []}})
+    const email = this.props.params.email;
+    this.props.readData({ type: 'email', terms: email});
   }
 
   static countVotes(votes) {
@@ -53,7 +55,7 @@ class Users extends Component {
           </div>
           <UserVoteTrends data={user.votes} color="blue" />
           <h3 className="center-text">{user.firstname}'s Posts</h3>
-          <SearchResultsList />
+          <SearchResultsList message={this.props.message} askingUser={this.props.user.data} />
         </div>
       );
     } else {
@@ -65,7 +67,7 @@ class Users extends Component {
 
 function mapStateToProps(state) {
   return {
-    user: state.auth.user,
+    user: state.auth.otherUser,
     message: state.auth.message
   };
 }

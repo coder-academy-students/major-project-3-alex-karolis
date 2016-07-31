@@ -5,6 +5,10 @@ import SearchResultList from './search_result_list';
 
 class Search extends Component {
 
+  componentWillMount() {
+    this.setState({ auth: { message: []}})
+  }
+
   static handleFormSubmit({type, terms}) {
     this.props.readData({type, terms});
     const search = this.props.fields;
@@ -35,7 +39,7 @@ class Search extends Component {
           </fieldset>
           <button action="submit" className="btn btn-primary">Search</button>
         </form>
-        <SearchResultList/>
+        <SearchResultList message={this.props.message} askingUser="all" />
       </div>
     );
   }

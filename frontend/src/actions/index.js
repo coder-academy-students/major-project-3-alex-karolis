@@ -15,7 +15,8 @@ import {
   DELETE_COMMENT,
   ADD_IMAGE_URL,
   VOTE_ON_POST,
-  GET_USER_PROFILE
+  GET_USER_PROFILE,
+  GET_OTHER_USER_PROFILE
 } from './types';
 
 const API_URL = 'http://localhost:3090';
@@ -100,6 +101,7 @@ export function signoutUser() {
 // GET USER PROFILE
 
 export function getUserProfile(userEmail) {
+  const notCurrentUser = userEmail ? true : false;
   return function(dispatch) {
     axios.post(`${API_URL}/getuserprofile`, {
       userEmail
@@ -107,10 +109,17 @@ export function getUserProfile(userEmail) {
       headers: { authorization: localStorage.getItem('token') }
     })
       .then(result => {
-        dispatch({
-          type: GET_USER_PROFILE,
-          payload: result
-        });
+        if (notCurrentUser) {
+          dispatch({
+            type: GET_OTHER_USER_PROFILE,
+            payload: result
+          });
+        } else {
+          dispatch({
+            type: GET_USER_PROFILE,
+            payload: result
+          });
+        }
       });
   }
 }

@@ -12,7 +12,8 @@ import {
   ADD_IMAGE_URL,
   DELETE_SUBMISSION,
   VOTE_ON_POST,
-  GET_USER_PROFILE
+  GET_USER_PROFILE,
+  GET_OTHER_USER_PROFILE
 } from '../actions/types';
 
 export default function(state={}, action) {
@@ -25,6 +26,9 @@ export default function(state={}, action) {
       return {...state, error: action.payload};
     case GET_USER_PROFILE:
       return {...state, user: action.payload};
+    case GET_OTHER_USER_PROFILE:
+      console.log(action.payload);
+      return {...state, otherUser: action.payload};
     case FETCH_DATA:
       return {...state, message: action.payload};
     case SUBMIT_DATA:

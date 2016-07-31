@@ -10,11 +10,20 @@ class UserProfile extends Component {
 
   componentWillMount() {
     this.props.getUserProfile();
+    this.setState({ auth: { message: []}})
+    if (this.props.user) this.props.readData({ type: 'email', terms: this.props.user.data.email});
+  }
+
+  shouldComponentUpdate(nextProps) {
+    if (this.props.message &&
+        this.props.user &&
+        this.props.message.length === nextProps.message.length) return false;
+    return true;
   }
 
   componentWillUpdate(nextProps) {
-    const email = nextProps.user.data.email;
-    this.props.readData({type: 'email', email})
+   const email = nextProps.user.data.email;
+    this.props.readData({ type: 'email', terms: email});
   }
 
   static countVotes(votes) {
@@ -49,7 +58,7 @@ class UserProfile extends Component {
           </div>
           <UserVoteTrends data={user.votes} color="blue" />
           <h3 className="center-text">My Posts</h3>
-          <SearchResultsList />
+          <SearchResultsList message={this.props.message} askingUser={this.props.user.data} />
         </div>
       );
     } else {

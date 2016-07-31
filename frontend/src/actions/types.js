@@ -12,3 +12,4 @@ export const CLEAR_SUBMIT_COMPONENT = 'clear_submit_component';
 export const DELETE_SUBMISSION = 'delete_submission';
 export const VOTE_ON_POST = 'vote_on_post';
 export const GET_USER_PROFILE = 'get_user_profile';
+export const GET_OTHER_USER_PROFILE = 'get_user_other_profile';

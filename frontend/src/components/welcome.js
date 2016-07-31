@@ -13,7 +13,7 @@ class Welcome extends Component  {
     return (
       <div>
         <h1 className="welcome-component">Welcome to suPerCooL search</h1>
-        <SearchResultList/>
+        <SearchResultList message={this.props.message} askingUser="all" />
       </div>
     );
   }
