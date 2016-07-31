@@ -5,15 +5,11 @@ const bodyParser = require('body-parser');
 const morgan = require('morgan');
 const app = express();
 const router = require('./router');
-const mongoose = require('mongoose');
 const cors = require('cors');
-// DB Setup
-//
-// mongoose.connect('mongodb://localhost:auth/auth');
-
+const io = require('socket.io');
 // App Set Up
-// Enable cors
 
+// Enable cors
 app.use(cors()); // can update this to enable only one domain
 
 // Morgan provides logging of incoming requests
@@ -37,3 +33,22 @@ const server = http.createServer(app);
 server.listen(port, () => {
   console.log('Server listening on port: ', port);
 });
+
+// Set up socket
+
+io.listen(server);
+
+function handleIO(socket) {
+
+  console.log('client connected');
+
+  socket.on('disconnect', function () {
+    console.log('client disconnected');
+  });
+
+  socket.on('msg', function(broadcast) {
+    socket.broadcast.emit('broadcast', broadcast);
+  });
+}
+
+io.on('connection', handleIO);

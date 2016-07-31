@@ -19,7 +19,7 @@ import {
   GET_OTHER_USER_PROFILE
 } from './types';
 
-const API_URL = 'http://localhost:3090';
+export const API_URL = 'http://localhost:3090';
 
 // USER CRUD ------------------------------------------------------------------
 
@@ -32,7 +32,7 @@ export function signinUser({ email, password }) {
   // This is enabled with the npm package 'redux-thunk'
   // which gives us arbitrary access to the dispatch method
   return function (dispatch) {
-    
+
     // Submit email and password to server
     axios.post(`${API_URL}/signin`, { email, password })
       .then(response => {

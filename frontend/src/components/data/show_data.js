@@ -4,6 +4,7 @@ import moment from 'moment-timezone';
 import * as actions from '../../actions';
 import EditData from './edit_data';
 import toastr from 'toastr';
+import CommentList from './list_comments';
 
 class ShowData extends Component {
 
@@ -33,31 +34,6 @@ class ShowData extends Component {
     }, 0);
   }
 
-
-  listComments() {
-    if (this.props.msgComments.data.comments) {
-      return this.props.msgComments.data.comments.map(comment => {
-        return (
-            <li key={comment.id}
-                className="list-group-item overflow-hidden comment-list">
-              <p className="text-muted comment-list-header">{comment.email}</p>
-              <p className="text-muted comment-list-header">
-                {moment(comment.createdAt)
-                  .tz("Australia/Sydney").format('MMMM Do YYYY, h:mm:ss a')}
-                </p>
-              <p className="bottom-margin-30px">{comment.comment}</p>
-              <span
-                value={comment.id}
-                onClick={() => this.deleteComment(comment.id)}
-                className="btn btn-danger btn-sm float-right">
-              Delete comment
-            </span>
-            </li>
-          );
-      });
-    }
-  }
-
   getItem() {
     if (this.props.msgComments) {
       const message = this.props.msgComments.data;
@@ -73,14 +49,18 @@ class ShowData extends Component {
               value={message}
               onClick={() => this.vote(message, true)}
               className="onHover">
-              <img src={'../../../images/upvote.png'} height={42} width={42} />
+              <img src={'../../../images/upvote.png'}
+                   height={42} width={42} />
             </div>
-            <p className="text-muted votes"> {this.countVotes(message.votes)} </p>
+            <p className="text-muted votes">
+              {this.countVotes(message.votes)}
+            </p>
             <div
               value={message}
               onClick={() => this.vote(message, false)}
               className="onHover">
-              <img src={'../../../images/downvote.png'} height={42} width={42} />
+              <img src={'../../../images/downvote.png'}
+                   height={42} width={42} />
             </div>
           </div>
           <div className="col-md-6">
@@ -88,14 +68,14 @@ class ShowData extends Component {
             <p className="text-muted comment-list">{message.email}</p>
             <p
               className="text-muted comment-list">
-              {moment(message.createdAt).tz("Australia/Sydney").format('MMMM Do YYYY, h:mm:ss a')}
+              {moment(message.createdAt).tz("Australia/Sydney")
+                .format('MMMM Do YYYY, h:mm:ss a')}
             </p>
           </div>
           <div className="col-md-12">
             <EditData post={this.props.msgComments.data.post} />
-            <ul className="list-group">
-              {this.listComments()}
-            </ul>
+
+            <CommentList comments={this.props.msgComments.data.comments}/>
           </div>
         </div>
       );
@@ -115,7 +95,8 @@ class ShowData extends Component {
               <label>Add Comment</label>
               <input {...comment} className="form-control" />
             </fieldset>
-            <button action="submit" className="btn btn-primary float-right">
+            <button action="submit"
+                    className="btn btn-primary float-right">
               Submit
             </button>
           </form>

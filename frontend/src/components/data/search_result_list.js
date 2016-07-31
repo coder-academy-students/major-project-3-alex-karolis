@@ -25,7 +25,8 @@ class SearchResultList extends Component {
   listResults() {
     if (this.props.message) {
       return this.props.message.map(result => {
-        if (this.props.askingUser === 'all' || this.props.askingUser.email === result.email)
+        if (this.props.askingUser === 'all' ||
+            this.props.askingUser.email === result.email)
         return (
           <li key={result.id}
               className="list-group-item">
@@ -53,7 +54,9 @@ class SearchResultList extends Component {
                 readonly: 1
               }}
               className="list-group-item-text message-post" />
-            <p className="text-muted">Votes: {this.countVotes(result.votes)} </p>
+            <p className="text-muted">
+              Votes: {this.countVotes(result.votes)}
+            </p>
             <Link
               to={`/data/${result.id}`}
               className="btn btn-primary btn-sm">

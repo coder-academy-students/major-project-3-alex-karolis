@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Sparklines, SparklinesBars, SparklinesReferenceLine } from 'react-sparklines';
+import { Sparklines, SparklinesBars, SparklinesCurve, SparklinesReferenceLine } from 'react-sparklines';
 import moment from 'moment';
 
 export default (props) => {
@@ -7,6 +7,7 @@ export default (props) => {
   function finalNumber(arr) {
     return arr[arr.length - 1];
   }
+
   const month = new Date();
   month.setDate(month.getDate()-30);
 
@@ -50,21 +51,21 @@ export default (props) => {
         <tr>
           <td>
             <Sparklines height={100} width={120} data={runningTotal(props.data, all)}>
-              <SparklinesBars style={{ fill: "blue" }} />
+              <SparklinesCurve style={{ fill: "blue" }} />
               <SparklinesReferenceLine type="avg" />
             </Sparklines>
             <div>{finalNumber(runningTotal(props.data, all))} votes</div>
           </td>
           <td>
             <Sparklines height={100} width={120} data={runningTotal(props.data, month)}>
-              <SparklinesBars style={{ fill: "green" }} />
+              <SparklinesCurve style={{ fill: "green" }} />
               <SparklinesReferenceLine type="avg" />
             </Sparklines>
             <div>{finalNumber(runningTotal(props.data, month)) || 0} votes this month</div>
           </td>
           <td>
             <Sparklines height={100} width={120} data={runningTotal(props.data, week)}>
-              <SparklinesBars style={{ fill: "orange" }} />
+              <SparklinesCurve style={{ fill: "orange" }} />
               <SparklinesReferenceLine type="avg" />
             </Sparklines>
             <div>{finalNumber(runningTotal(props.data, week)) || 0} votes this week</div>

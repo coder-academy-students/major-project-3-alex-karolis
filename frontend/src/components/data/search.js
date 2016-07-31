@@ -37,7 +37,11 @@ class Search extends Component {
             <label>Search terms:</label>
             <input {...terms} className="form-control" />
           </fieldset>
-          <button action="submit" className="btn btn-primary">Search</button>
+          <button
+            action="submit"
+            className="btn btn-primary">
+            Search
+          </button>
         </form>
         <SearchResultList message={this.props.message} askingUser="all" />
       </div>

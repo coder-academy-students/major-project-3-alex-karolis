@@ -17,7 +17,8 @@ class UserProfile extends Component {
   shouldComponentUpdate(nextProps) {
     if (this.props.message &&
         this.props.user &&
-        this.props.message.length === nextProps.message.length) return false;
+        this.props.message.length === nextProps.message.length &&
+        this.props.user === nextProps.user) return false;
     return true;
   }
 

@@ -49,7 +49,7 @@ exports.getData = function (req, res, next) {
         });
     // Search in title field for titles that contain the search terms
     case 'recent':
-      return Data.orderBy('createdAt').limit(3).run()
+      return Data.orderBy('createdAt').limit(10).run()
         .then(function(result) {
           res.json(result);
         })
@@ -148,7 +148,6 @@ exports.updateData = function (req, res) {
       console.log('catch error', err);
       res.send(err);
     });
-
 };
 
 // ADD COMMENT TO DATA
@@ -247,11 +246,12 @@ exports.setDataVotes = function (req, res) {
 
   Data.get(dataId).run()
     .then(function(data) {
-      const userAlreadyVoted = data.votes.find(function(comment) {
-        return comment.voterId === voterId;
+      const userAlreadyVoted = data.votes.find(function(vote) {
+        return vote.voterId === voterId;
       });
       if (userAlreadyVoted) {
-        Data.get(dataId).getJoin().run().then(function(result){ res.json(result) });
+        Data.get(dataId).getJoin().run()
+          .then(function(result){ res.json(result) });
       } else {
         const newVote = {upVote, createdAt, voterId};
 
