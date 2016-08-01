@@ -1,9 +1,20 @@
 import React, { Component} from 'react'
 import moment from 'moment-timezone'
+import SearchBarComments from './search_bar_comments'
 
 class CommentList extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = { terms: '' }
+  }
+
+  onSearchTermChange(terms) {
+    this.setState({terms});
+  }
 
   listComments () {
+    console.log(this.state.terms)
     return this.props.comments.map(comment => {
       return (
         <li key={comment.id}
@@ -28,9 +39,12 @@ class CommentList extends Component {
   }
   render () {
     return (
-      <ul className="list-group">
-        {this.listComments()}
-      </ul>
+      <div>
+        <SearchBarComments onInputChange={onSearchTermChange} />
+        <ul className="list-group">
+          {this.listComments()}
+        </ul>
+      </div>
     );
   }
 };

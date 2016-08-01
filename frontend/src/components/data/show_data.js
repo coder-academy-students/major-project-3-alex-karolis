@@ -74,8 +74,8 @@ class ShowData extends Component {
           </div>
           <div className="col-md-12">
             <EditData post={this.props.msgComments.data.post} />
-
-            <CommentList comments={this.props.msgComments.data.comments}/>
+            <CommentList
+              comments={this.props.msgComments.data.comments}/>
           </div>
         </div>
       );
