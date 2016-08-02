@@ -6,6 +6,7 @@ export const SUBMIT_DATA = 'submit_data';
 export const DELETE_DATA = 'delete_data';
 export const GET_COMMENT_DATA = 'get_comment_data';
 export const UPDATE_COMMENT_DATA = 'update_comment_data';
+export const UPDATE_COMMENT_SEARCH = 'update_comment_search';
 export const DELETE_COMMENT = 'delete_comment';
 export const ADD_IMAGE_URL = 'add_image_url';
 export const CLEAR_SUBMIT_COMPONENT = 'clear_submit_component';

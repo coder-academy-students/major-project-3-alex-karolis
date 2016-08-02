@@ -8,6 +8,7 @@ import {
   DELETE_DATA,
   GET_COMMENT_DATA,
   UPDATE_COMMENT_DATA,
+  UPDATE_COMMENT_SEARCH,
   DELETE_COMMENT,
   ADD_IMAGE_URL,
   DELETE_SUBMISSION,
@@ -54,6 +55,8 @@ export default function(state={}, action) {
       return {...state, msgComments: action.payload};
     case UPDATE_COMMENT_DATA:
       return {...state, msgComments: action.payload};
+    case UPDATE_COMMENT_SEARCH:
+      return {...state, terms: action.payload};
     case DELETE_COMMENT:
       const deleteIndexComment = state.msgComments.data.comments
         .findIndex(elem => elem.id === action.payload);

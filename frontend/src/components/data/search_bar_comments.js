@@ -1,28 +1,28 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import * as actions from './../../actions'
 
 class SearchBarComment extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {terms: ''};
-  }
 
   render () {
     return (
       <div className="search-bar">
-        <label>Search Comments </label>
+        <label><strong className="text-color-blue">Search Comments: </strong></label>
         <input
           className="form-control"
-          value={this.state.terms}
+          value={this.props.terms}
           onChange={event => this.onInputChange(event.target.value)} />
       </div>
     );
   }
 
   onInputChange(terms) {
-    this.setState({terms});
-    // this.props.onSearchTermChange(terms);
+    this.props.updateCommentSearch(terms);
   }
 }
 
-export default SearchBarComment
+function mapStateToProps (state) {
+  return { terms: state.auth.terms };
+}
+
+export default connect(mapStateToProps, actions)(SearchBarComment)

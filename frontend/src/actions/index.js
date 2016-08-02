@@ -13,6 +13,7 @@ import {
   GET_COMMENT_DATA,
   UPDATE_COMMENT_DATA,
   DELETE_COMMENT,
+  UPDATE_COMMENT_SEARCH,
   ADD_IMAGE_URL,
   VOTE_ON_POST,
   GET_USER_PROFILE,
@@ -313,6 +314,13 @@ export function setImage(files) {
         }
       }
     });
+  }
+}
+
+export function updateCommentSearch(terms) {
+  return {
+      type: UPDATE_COMMENT_SEARCH,
+      payload: terms
   }
 }
 
