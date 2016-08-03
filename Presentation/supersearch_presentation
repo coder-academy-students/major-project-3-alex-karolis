@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle
+
+# SuperSearch
+### A search engine for the 21st Century
+
+---
+
+class: left, middle
+
+# Agenda
+
+- What is supersearch?
+
+Supersearch is a new and exciting platform for searching the internet for information. It provides an interactive user interface that allows users to refine their search incrementally until they find exactly what they are looking for.
+
+---
+
+class: left, middle
+
+# Agenda cont...
+
+- The project
+
+Due to the sensitive nature of the IP in the project, I decided to mock up the application as a reddit come stack overflow type design. This would allow me to design and mock both the ERD and the UI in such a way that mimics the broader project, whilst allowing me to produce something that can be presented in an open forum.
+
+---
+
+class: left, middle
+
+# Agenda cont...
+
+- The deliverables
+
+Provide a working frontend in React-Redux that hooks into a backend API running on node and drawing data from rethinkDB
+
+---
+
+class: left, middle
+
+# Agenda cont...
+
+- Where to from here?
+
+Possibilities are endless here, the next step will be providing a webhook into the database that allows realtime communication between users for the purpose of mocking up a system that pushes data onto the frontend.
+
+---
+
+class: center, middle
+
+# What is supersearch?
+
+The wireframe
+
+
+---
+class: center, middle
+
+# The project
+
+
+
+---
+class: center, middle
+
+# The deliverables
+
+App run through
+
+---
+
+class: center, middle
+![Default-aligned image](image01.png)
+
+---
+
+class: center, middle
+![Default-aligned image](image02.png)
+
+---
+
+class: center, middle
+![Default-aligned image](image03.png)
+
+---
+
+class: center, middle
+![Default-aligned image](image04.png)
+
+---
+
+class: center, middle
+![Default-aligned image](image05.png)
+
+---
+
+class: center, middle
+![Default-aligned image](image06.png)
+
+
+    </textarea>
+    <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>

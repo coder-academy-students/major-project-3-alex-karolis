@@ -7,8 +7,6 @@ class CommentList extends Component {
 
   listComments () {
     return this.props.comments.map(comment => {
-      console.log(this.props.terms)
-      console.log(this.props.terms == '')
       if (this.props.terms === undefined || comment.comment.indexOf(this.props.terms) !== -1) {
         return (
           <li key={comment.id}

@@ -57,20 +57,16 @@ export function signinUser({ email, password }) {
 
 // SIGN UP USER
 
-export function signupUser({ email, password, firstname, lastname, bio} ,{ image }) {
-
+export function signupUser({ email, password, firstname, lastname, bio } , { image }) {
   // Use redux-thunk
   return function(dispatch) {
-
     // Submit email and password to the server
     axios.post(`${API_URL}/signup`, { email, password, firstname, lastname, bio, image })
       .then(response => {
         // Good request
         dispatch({ type: AUTH_USER });
-
         // Update JWT
         localStorage.setItem('token', response.data.token);
-
         // redirect
         browserHistory.push('/search');
       })

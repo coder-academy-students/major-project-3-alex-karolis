@@ -1,12 +1,8 @@
 import React, { Component } from 'react';
-import { Sparklines, SparklinesBars, SparklinesCurve, SparklinesReferenceLine } from 'react-sparklines';
+import { Sparklines, SparklinesCurve, SparklinesReferenceLine } from 'react-sparklines';
 import moment from 'moment';
 
 export default (props) => {
-
-  function finalNumber(arr) {
-    return arr[arr.length - 1];
-  }
 
   const month = new Date();
   month.setDate(month.getDate()-30);
@@ -20,8 +16,25 @@ export default (props) => {
   const all = new Date();
   all.setDate(all.getDate()-99999);
 
+  function finalNumber(arr) {
+    return arr[arr.length - 1];
+  }
+
+  function startValue (votesArrays, range) {
+    // Get the starting value for the votes array sent to SparkLines
+    // by calculating the starting vote count.
+    return votesArrays.reduce((outerRunTotal, votesArray) => {
+        return outerRunTotal + votesArray.reduce((innerRunTotal, vote) => {
+            if(moment(vote.createdAt).isBefore(range)) {
+              if (vote.upVote) return innerRunTotal + 1;
+              else return innerRunTotal - 1;
+            }
+          },0);
+      },0) || 0;
+  }
+
   function runningTotal (votesArrays, range) {
-    let total = 0;
+    let total = startValue(votesArrays, range);
     const arr = votesArrays.map(votesArray => votesArray.map(vote => {
       if (moment(vote.createdAt).isAfter(range)) {
         if (vote.upVote) {
@@ -73,8 +86,8 @@ export default (props) => {
           <td>
             <Sparklines
               height={100} width={120}
-              data={runningTotal(props.data, day).length < 1 ? [1] : runningTotal(props.data, day)}>
-              <SparklinesBars style={{ fill: "red" }} />
+              data={runningTotal(props.data, day)}>
+              <SparklinesCurve style={{ fill: "red" }} />
               <SparklinesReferenceLine type="avg" />
             </Sparklines>
             <div>{finalNumber(runningTotal(props.data, day)) || 0} votes today</div>

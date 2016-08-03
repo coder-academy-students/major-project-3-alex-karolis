@@ -1,0 +1,37 @@
+2016-08-03T20:16:27.415716000 0.377498s notice: Recursively removing directory /Users/alexi2/Documents/Dropbox/heroku/SuperSearch/rethinkdb_data/rethinkdb_data/tmp
+2016-08-03T20:16:27.418537000 0.380326s notice: Initializing directory /Users/alexi2/Documents/Dropbox/heroku/SuperSearch/rethinkdb_data/rethinkdb_data
+2016-08-03T20:16:27.418709000 0.380490s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory '/Users/alexi2/Documents/Dropbox/heroku/SuperSearch/rethinkdb_data/rethinkdb_data' did not already exist or is empty.)
+2016-08-03T20:16:27.418904000 0.380686s notice: Running rethinkdb 2.3.4 (CLANG 7.3.0 (clang-703.0.31))...
+2016-08-03T20:16:27.428290000 0.390072s notice: Running on Darwin 15.6.0 x86_64
+2016-08-03T20:16:27.428364000 0.390145s notice: Loading data from directory /Users/alexi2/Documents/Dropbox/heroku/SuperSearch/rethinkdb_data/rethinkdb_data
+2016-08-03T20:16:27.526101000 0.487882s info: Automatically using cache size of 100 MB
+2016-08-03T20:16:27.526120000 0.487900s warn: Cache size does not leave much memory for server and query overhead (available memory: 848 MB).
+2016-08-03T20:16:27.526133000 0.487913s warn: Cache size is very low and may impact performance.
+2016-08-03T20:16:27.528768000 0.490549s notice: Listening for intracluster connections on port 29015
+2016-08-03T20:16:27.530646000 0.492426s notice: Listening for client driver connections on port 28015
+2016-08-03T20:16:27.530805000 0.492586s notice: Listening for administrative HTTP connections on port 8080
+2016-08-03T20:16:27.530808000 0.492589s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2016-08-03T20:16:27.530846000 0.492627s notice: Listening on driver addresses: 127.0.0.1, ::1
+2016-08-03T20:16:27.530851000 0.492631s notice: Listening on http addresses: 127.0.0.1, ::1
+2016-08-03T20:16:27.530859000 0.492640s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-08-03T20:16:27.530867000 0.492648s notice: Server ready, "MacBook_Air_local_fkm" 0654c980-daac-4376-9d66-1a64cb122b74
+2016-08-03T20:16:33.494563000 6.456092s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-08-03T20:16:39.441224000 12.402417s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-08-03T20:16:45.545632000 18.506574s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-08-03T20:16:50.003956000 22.964729s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-08-03T20:16:52.087386000 25.048075s notice: Someone asked for the nonwhitelisted file "/sockjs-node/info".  If this should be accessible, add it to the static web assets.
+2016-08-03T20:17:30.709427000 63.668351s info: Table 4fec150b-d66d-4443-a545-619d78a03b38: Starting a new Raft election for term 1.
+2016-08-03T20:17:30.710732000 63.669656s info: Table 4fec150b-d66d-4443-a545-619d78a03b38: Added replica on this server.
+2016-08-03T20:17:30.711609000 63.670533s info: Table c4c0fb02-f8ee-401f-9406-8914e217048e: Starting a new Raft election for term 1.
+2016-08-03T20:17:30.711808000 63.670731s info: Table c4c0fb02-f8ee-401f-9406-8914e217048e: Added replica on this server.
+2016-08-03T20:17:30.713031000 63.671955s info: Table a44cb784-1e9a-42bf-acc7-23831935c4ff: Starting a new Raft election for term 1.
+2016-08-03T20:17:30.714310000 63.673233s info: Table a44cb784-1e9a-42bf-acc7-23831935c4ff: Added replica on this server.
+2016-08-03T20:17:30.727278000 63.686202s info: Table 4fec150b-d66d-4443-a545-619d78a03b38: This server is Raft leader for term 1. Latest log index is 0.
+2016-08-03T20:17:30.727421000 63.686345s info: Table c4c0fb02-f8ee-401f-9406-8914e217048e: This server is Raft leader for term 1. Latest log index is 0.
+2016-08-03T20:17:30.732823000 63.691747s info: Table a44cb784-1e9a-42bf-acc7-23831935c4ff: This server is Raft leader for term 1. Latest log index is 0.
+2016-08-03T20:17:31.281924000 64.240847s info: Table a44cb784-1e9a-42bf-acc7-23831935c4ff: Configuration is changing.
+2016-08-03T20:18:35.569196000 128.525177s notice: Server got SIGINT from pid 4421, uid 501; shutting down...
+2016-08-03T20:18:35.569485000 128.525466s notice: Shutting down client connections...
+2016-08-03T20:18:35.586317000 128.542298s notice: All client connections closed.
+2016-08-03T20:18:35.586333000 128.542314s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2016-08-03T20:18:35.605678000 128.561659s notice: Storage engine shut down.

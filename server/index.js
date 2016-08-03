@@ -35,20 +35,20 @@ server.listen(port, () => {
 });
 
 // Set up socket
-
-io.listen(server);
-
-function handleIO(socket) {
-
-  console.log('client connected');
-
-  socket.on('disconnect', function () {
-    console.log('client disconnected');
-  });
-
-  socket.on('msg', function(broadcast) {
-    socket.broadcast.emit('broadcast', broadcast);
-  });
-}
-
-io.on('connection', handleIO);
+// 
+// io.listen(server);
+//
+// function handleIO(socket) {
+//
+//   console.log('client connected');
+//
+//   socket.on('disconnect', function () {
+//     console.log('client disconnected');
+//   });
+//
+//   socket.on('msg', function(broadcast) {
+//     socket.broadcast.emit('broadcast', broadcast);
+//   });
+// }
+//
+// io.on('connection', handleIO);
