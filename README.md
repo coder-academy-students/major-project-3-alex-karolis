@@ -2,7 +2,7 @@
 
 ### Major Project for codefactory academy bootcamp
 
-Front end React-Redux application hosted @ 
+Front end React-Redux application hosted @ https://salty-stream-21030.herokuapp.com/
 
 #### Clone Repository
 
