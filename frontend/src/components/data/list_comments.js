@@ -2,8 +2,15 @@ import React, { Component} from 'react'
 import moment from 'moment-timezone'
 import { connect } from 'react-redux'
 import SearchBarComments from './search_bar_comments'
+import * as actions from '../../actions'
+import toastr from 'toastr'
 
 class CommentList extends Component {
+
+  deleteComment(commentId) {
+    this.props.deleteComment(commentId);
+    toastr.warning('Comment Deleted')
+  }
 
   listComments () {
     return this.props.comments.map(comment => {
@@ -48,4 +55,4 @@ function mapStateToProps (state) {
   return { terms: state.auth.terms };
 }
 
-export default connect(mapStateToProps, null)(CommentList);
+export default connect(mapStateToProps, actions)(CommentList);

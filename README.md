@@ -1,3 +1,28 @@
+# SuperSearch Application
+
+### Major Project for codefactory academy bootcamp
+
+#### Clone Repository
+
+`git clone git@github.com:alexi21/SuperSearchProjectFolder.git supersearch`
+
+#### Install and start rethinkDB
+
+`cd supersearch && npm install rethinkdb && rethinkdb`
+
+#### Start server API
+
+`cd supersearch/server && npm run dev`
+
+#### Start frontend
+
+`cd supersearch/frontend && npm start`
+
+#### Open application
+
+Navigate to localhost:8000 in your web browser
+
+Signup and navigate away...
 
 ### Client interaction
 

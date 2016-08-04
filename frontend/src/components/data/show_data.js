@@ -92,7 +92,7 @@ class ShowData extends Component {
         <div className="col-md-12 bottom-margin-108px">
           <form onSubmit={handleSubmit(this.addComment.bind(this))} >
             <fieldset className="form-group pad-top-20">
-              <label>Add Comment</label>
+              <label><strong className="text-color-blue">Add Comment</strong></label>
               <input {...comment} className="form-control" />
             </fieldset>
             <button action="submit"
