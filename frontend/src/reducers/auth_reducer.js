@@ -69,6 +69,7 @@ export default function(state={}, action) {
             title: state.msgComments.data.title,
             id: state.msgComments.data.id,
             image: state.msgComments.data.image,
+            votes: state.msgComments.data.votes,
             comments: [
               ...state.msgComments.data.comments.slice(0, deleteIndexComment),
               ...state.msgComments.data.comments.slice(deleteIndexComment + 1)
