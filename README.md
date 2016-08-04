@@ -472,7 +472,25 @@ See above.
 
 ####User stories for the whole application.
 
+As a New User, I want to Sign Up so that I can use the application.
 
+As a Current User, I want to Sign In so that so that I can use the application.
+
+As a Current User, I want to Search so that I can find data on my search terms.
+
+As a Current User, I want to add a comment to returned data so that I can refine the returned data.
+
+As a Current User, I want to submit a form so that I can submit data to the database.
+
+As a Current User, I want add a picture to my profile so that I can submit my profile image.
+
+As a Current User, I want to vote on a Data return so that I can contribute to the value of the data.
+
+As a Current User, I want to delete a comment so that I can refine the returned data.
+
+As a Current User, I want delete a returned Data so that I can refine the data search.
+
+As a Current User, I want to view another user profile so that I can learn about other users.
 
 ####Entity Relationship Diagram (ERD).
 
@@ -481,15 +499,3 @@ See above.
 ####Project plan and effort estimation.
 
 ####Tools and methodologies
-
-  - Trello or similar project management tool to be used to track progress of build.
-
-  - Show evidence of Slack conversations or use of other communication tools.
-
-  - Code review. Demonstrate that you have had your code reviewed by other students and that you have provided a code review for others.
-
-  - Github. Demonstrate use of frequent commits, pull requests, documentation.
-
-  - Use Agile development methodologies.
-
-  - Provide evidence you have used code quality tools
