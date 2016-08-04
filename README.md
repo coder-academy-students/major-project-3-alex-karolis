@@ -441,32 +441,40 @@ TBA
 
 TBA
 
-### Application Design
+## Application Design
 
-#### Demonstrate your ability to break down the problem and design a solution.
+### Demonstrate your ability to break down the problem and design a solution.
 
-1. One page summary of your application including problem definition, solution.
+####One page summary of your application including problem definition, solution.
 
 Problem: Provide a functional model of an application that interacts with a document database capable of scale, whilst also allowing the power of Object Relational Mapping. Front end must be capable of holding business logic for parsing and updating data in order to minimise API stress.
 
-2. Determine the appropriate client technology, development tools, and platform for writing the UI
+####Determine the appropriate client technology, development tools, and platform for writing the UI
 
 See above.
 
-3. Review the conceptual design with the client, and edit as required
+####Review the conceptual design with the client, and edit as required
 
 See above.
 
-4. A workflow diagram of the user journey/s.
+####A workflow diagram of the user journey/s.
 
-5. Wireframes for at least 5 screens.
+####Wireframes for at least 5 screens.
 
 ![image01](Presentation/image01.png)
+![image02](Presentation/image02.png)
+![image03](Presentation/image03.png)
+![image04](Presentation/image04.png)
+![image05](Presentation/image05.png)
+![image06](Presentation/image06.png)
 
-6. User stories for the whole application.
-7. Entity Relationship Diagram (ERD).
-8. Project plan and effort estimation.
-9. Tools and methodologies
+####User stories for the whole application.
+
+####Entity Relationship Diagram (ERD).
+
+####Project plan and effort estimation.
+
+####Tools and methodologies
 
   - Trello or similar project management tool to be used to track progress of build.
 
