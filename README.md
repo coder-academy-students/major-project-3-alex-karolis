@@ -459,6 +459,8 @@ See above.
 
 ####A workflow diagram of the user journey/s.
 
+![UserFlow](Presentation/UserFlow.png)
+
 ####Wireframes for at least 5 screens.
 
 ![image01](Presentation/image01.png)
@@ -470,7 +472,11 @@ See above.
 
 ####User stories for the whole application.
 
+
+
 ####Entity Relationship Diagram (ERD).
+
+![ERD](Presentation/ERD.png)
 
 ####Project plan and effort estimation.
 
