@@ -24,25 +24,29 @@ Navigate to localhost:8000 in your web browser
 
 Signup and navigate away...
 
+## The project
+
+Build an interactive React-Redux frontend with a separate Node.JS backend API to manage RethinkDB with thinky.io as an ORM wrapper.
+
 ## Client interaction
 
 ### Demonstrate your ability to satisfy your client with the quality of your work and high level of service.
 
 1. Record all interactions with your client in a diary format.
 
-  - email records provided to head teacher
-
-
+Email records provided to head teacher
 
 2. Plan information gathering activities to determine project requirements, constraints and risks.
 
-  - Research requirements constraints and risks.
+####Client requirements constraints and risks, a discussion of the project:
 
-####Client requirements:
+  The clients application involves some IP, and as such I cannot explicitly describe the details. However, the requirements can be mocked up in a Stack Overflow style clone, with Post data and associated Comment data. Which is how I decided to build the application for this project.
 
   Client has two main requirements.
 
-  The first requirement was the ability to store and parse a large database. It was decided due to the shape of the data, and the dynamic manner in which the data would be created and stored that a noSQL database should be used. Initially we discussed using MongoDB, however due to the flexibility provided by using thinky.io as an ORM wrapper for RethinkDB we decided to try using thinky.io and rethinkDB together. This pattern enabled me to create dynamic joins on database queries that allowed a great deal of flexibility in the way the documents are stored and queried.
+#####1.
+
+The first requirement was the ability to store and parse a large database. It was decided due to the shape of the data, and the dynamic manner in which the data would be created and stored that a noSQL database should be used. Initially we discussed using MongoDB, however due to the flexibility provided by using thinky.io as an ORM wrapper for RethinkDB we decided to try using thinky.io and rethinkDB together. This pattern enabled me to create dynamic joins on database queries that allowed a great deal of flexibility in the way the documents are stored and queried.
 
   RethinkDB has its own query language Reql which is a powerful functional programming style query language that is compatible with functional programming patterns in javascript.
 
@@ -77,13 +81,64 @@ Signup and navigate away...
 
   Passport and Bcrypt are used to hash passwords, create and provide JWTs to users, and run the logic for authentication on the server. The server itself is a fully authenticated API that requires users to signin, signup, or have the required JWT associated with their user id.
 
+#####2.
+The second requirement was that the front end should enable fast and intuitive responses to interaction. The user would be selecting, deleting, and adding search query data as the search was further refined.
+
+This would require a frontend that could quickly react to the users interaction, and update seemlessly. Due to these requirements we narrowed the field to two possibilities. The Meteor framework, which would enable rapid prototyping and hook up quickly with a MongoDB while providing an easy way of managing webhooks.
+
+The other possiblity was ReactJS which we settled on for two reasons. Firstly, it would not require being locked into the Meteor framework which is highly opinionated and has an idiosyncratic API. Secondly, it would be more likely that we would be able to find more developers if the project team expanded.
+
+Once we had settled on this choice, I made the decision to build the React application using Redux. Redux provides a powerful but simple pattern for managing data in the frontend, and would enable me to pull some of the business logic off the API and into the frontend. Allowing me to call the API less often, and narrow the terms required to streamline the API calls within the frontend itself.
+
+
 3. Develop project charter, including preliminary statement of project scope and obtain sign-off
+
+See client interaction emails.
+
 4. Prepare project work breakdown, schedule and budget
+
+40 hours training
+40 hour sprint for first iteration
+40 hour sprint for second iteration
+
+Cost $0
+
 5. Compile project management plan documents as necessary to communicate the intended management strategy for the project and obtain sign-off
+
+See client interaction emails
+
 6. Identify and select team members, and allocate roles and responsibilities, based on project solution requirements
+
+Lead developer: me
+Second developer: me
+UI/UX developer: me
+Gopher: me
+
 7. Determine training and support needs of team members
+
+In order to prepare for this project I completed the following courses on Udemy:
+
+Modern React with Redux
+Advanced React and Redux
+ES6 javascript: The complete developers guide
+
 8. Establish project team values and agreed behavioural standards with team members
+
+Agreed behavioural standards:
+
+I was influenced by the Atlassian code and follow their lead.
+
+Honesty without bullshit
+Play as a team and always support one another
+Don't *&^^*& the customer
+Be the change you seek
+Show compassion and kindness at all times
+Discrimination or bias because of gender, race, or sexual preference is never tolerated.
+
 9. Monitor delivery and acceptance of assigned project team work activities and manage individuals
+
+
+
 10. Monitor and control project scope changes, risks and issues
 11. Manage system testing and hand over activities
 12. Prepare IT support plans and maintenance or support documents
