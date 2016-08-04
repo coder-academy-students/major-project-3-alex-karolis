@@ -537,39 +537,64 @@ I estimate that this would take another 80 hours to create a working scaffold. M
 
 The following tools where used:
 
-A Kanban board was set up and used to track process: this was done in situ at my office as I was the only person working on the program.
-Git and Github were used to commit and track changes.
-Both Webstorm and Atom were used to edit the code.
-Code review was done by Mark Pereira and I reviews some of his code.
+AGILE: A Kanban board was set up and used to track process: this was done in situ at my office as I was the only person working on the program.
+
+VCS: Git and Github were used to commit and track changes.
+
+CODE EDIT: Both Webstorm and Atom were used to edit the code.
+
+CODE REVIEW: Code review was done by Mark Pereira and I reviews some of his code.
+
+TDD: Parts of the project were created with a test driven development environment.
 
 ####ServerAPI
 
 NodeJS
+
 Express 4
+
 Passport
+
 Bcrypt
+
 RethinkDB
+
 thinky.io
+
 REQL
 
 ####FrontEnd
 
 React
+
 Redux
+
 ReduxForm
+
 DropZone
+
 TinyMCE
+
 Toastr
+
 Moment
+
 Redux-Thunk
+
 Babel
+
   testing:
+
   Mocha
+
   Chai
+
   Nock
+
   Mock-Local_Storage
   
 ####Deployment
 
 Webpack
+
 Heroku
