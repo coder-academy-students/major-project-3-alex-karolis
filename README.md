@@ -1,8 +1,18 @@
 # SuperSearch Application
 
-### Major Project for codefactory academy bootcamp
+## Major Project for codefactory academy bootcamp
+
+There are three options for checking out this project.
+
+### Online:
+
+Check out the heroku hosted front-end, minus a database unfortunately as rethinkDB costs money right now to host. Check back soon as I will be hardcoding some dummy data and spinning up the API shortly.
 
 Front end React-Redux application hosted @ https://salty-stream-21030.herokuapp.com/
+
+### Download it and play with it yourself.
+
+Follow these steps:
 
 #### Clone Repository
 
@@ -26,6 +36,8 @@ Navigate to localhost:8000 in your web browser
 
 Signup and navigate away...
 
+### Fund me to pay for the DB host and I will spin up the full app by hosting RethinkDB :)
+
 ## The project
 
 Build an interactive React-Redux frontend with a separate Node.JS backend API to manage RethinkDB with thinky.io as an ORM wrapper.
@@ -44,9 +56,9 @@ Email records provided to head teacher
 
   The clients application involves some IP, and as such I cannot explicitly describe the details. However, the requirements can be mocked up in a Stack Overflow style clone, with Post data and associated Comment data. Which is how I decided to build the application for this project.
 
-  Client has two main requirements.
+  Client has three main requirements.
 
-#####1.
+####1.
 
 The first requirement was the ability to store and parse a large database. It was decided due to the shape of the data, and the dynamic manner in which the data would be created and stored that a noSQL database should be used. Initially we discussed using MongoDB, however due to the flexibility provided by using thinky.io as an ORM wrapper for RethinkDB we decided to try using thinky.io and rethinkDB together. This pattern enabled me to create dynamic joins on database queries that allowed a great deal of flexibility in the way the documents are stored and queried.
 
@@ -83,7 +95,7 @@ The first requirement was the ability to store and parse a large database. It wa
 
   Passport and Bcrypt are used to hash passwords, create and provide JWTs to users, and run the logic for authentication on the server. The server itself is a fully authenticated API that requires users to signin, signup, or have the required JWT associated with their user id.
 
-#####2.
+####2.
 The second requirement was that the front end should enable fast and intuitive responses to interaction. The user would be selecting, deleting, and adding search query data as the search was further refined.
 
 This would require a frontend that could quickly react to the users interaction, and update seemlessly. Due to these requirements we narrowed the field to two possibilities. The Meteor framework, which would enable rapid prototyping and hook up quickly with a MongoDB while providing an easy way of managing webhooks.
@@ -91,6 +103,10 @@ This would require a frontend that could quickly react to the users interaction,
 The other possiblity was ReactJS which we settled on for two reasons. Firstly, it would not require being locked into the Meteor framework which is highly opinionated and has an idiosyncratic API. Secondly, it would be more likely that we would be able to find more developers if the project team expanded.
 
 Once we had settled on this choice, I made the decision to build the React application using Redux. Redux provides a powerful but simple pattern for managing data in the frontend, and would enable me to pull some of the business logic off the API and into the frontend. Allowing me to call the API less often, and narrow the terms required to streamline the API calls within the frontend itself.
+
+####3.
+
+Security: the api needs to be fully secure, and unable to be accessed without the required authentication. The solution to this requirement was to implement a rigorous and tested system for authentication using passwords that are salted and hashed before being stored in the database. And JWTs that created for authenticated users and passed in the headers of all API requests. Every hit to the API is parsed through a passport JWT strategy to check for the requisite JWT before handling the request.
 
 
 ####THREE: Develop project charter, including preliminary statement of project scope and obtain sign-off
@@ -451,6 +467,19 @@ TBA
 
 Problem: Provide a functional model of an application that interacts with a document database capable of scale, whilst also allowing the power of Object Relational Mapping. Front end must be capable of holding business logic for parsing and updating data in order to minimise API stress.
 
+... My thoughts on the current state of data sort algorithms and the possibility of improvement:
+
+I have spent some time thinking about the process you have outlined below, and I am convinced that your description and analogy with particles is both useful and warranted based on the manner in which you have described the interaction. Here is why.
+
+Meaning occurs between subjects not within them. This is an extension of the paradigm of context, but a reduction of that paradigm into an atomic relationship between subjects (here you can read subjects for particles, which is to say objects become subjects in their interaction with another object). Hence subjects derive their autonomy and meaning within the relationship they have with another. This is an important distinction, as it belies the tendency in semiology to understand our world through a competing paradigm of dominance, the most obvious being master-slave, but also woman-man, heterosexual-homosexual, etc... In other words, by understanding the autonomy and meaning of a thing within the atomic context of its relationship with another thing we can rid ourselves of the over-riding tendency to give meaning to things 'before' they have a chance to speak within their own context.
+So how does this apply to the HoB? In my understanding of what you have described below and in our recent discussion, data is treated as autonomous to the extent that it contains pre-exisiting predilections for organisation amongst its peers, but only according to the weighting of particular parameters within that autonomous state. In other words, a single piece of data has an infinite number of forces which could bind it to other data. 
+
+The parameters that data contains become useful only when we give weight to particular parameters over others. This is a typical way of searching through data, we search according to some argument and collect data according to the weight of that argument. Unfortunately, this has a tendency to marginalise what would otherwise be useful data, as the argument itself is not an object within the data, and hence forms an ideal to which data is checked for conformity. This problem is exacerbated by search engines such as google, in that the weight of the parameters within data is skewed according to the frequency with which they have been linked and followed in the past. The model of ideal and conformity does simplify our ability to search, however it predetermines the weight and consistency given to parameters within individual data points.
+
+In the model you describe, there is no ideal, rather the parameters within data points provide their own weight, and the model of attraction between data points allows us to search within a data set without predetermining the context. Rather the data itself provides its own context in how it becomes attracted to some data points and divorced from others. The sorting method occurs within the data set itself. The method of correlation is provided by the weight attributed to parameters within the data points themselves to be sure, and hence the process is started according to the terms provided, however there is no ideal, rather the ideal is formed after the search is completed and the data is inspected. This method of searching provides the ability to find new and interesting points of correlation that would not otherwise be found. The capacity for this correlation to provide useful data is further increased by the manner in which otherwise anomalous data will become visible, which will allow for more refined collection and sorting.
+
+I should add a disclaimer here, the theoretical coordinates of my thesis were heavily influenced by the work of philosophers who wrote extensively in the capacity for meaning to form between subjects in direct contradiction to the metaphysical premise of idealism. Hence my excitement. This is only a first blush at analysis however, and my fascination with this concept not withstanding I would love to learn more about the mathematical premise behind the HoB.
+
 ####Determine the appropriate client technology, development tools, and platform for writing the UI
 
 See above.
@@ -500,4 +529,47 @@ As a Current User, I want to view another user profile so that I can learn about
 
 ####Project plan and effort estimation.
 
+From here the project itself would need to be taken offline and refactored according to the lexicographic mapping required by the client.
+
+I estimate that this would take another 80 hours to create a working scaffold. Most of the work would be in refactoring the front end as the server already has the requisite models and search algorithms for the data at hand. As far as the front end, this would involve some refactoring to streamline the manner in which Redux is managing state, and improve the way state is handled and parsed in its display to the user.
+
 ####Tools and methodologies
+
+The following tools where used:
+
+A Kanban board was set up and used to track process: this was done in situ at my office as I was the only person working on the program.
+Git and Github were used to commit and track changes.
+Both Webstorm and Atom were used to edit the code.
+Code review was done by Mark Pereira and I reviews some of his code.
+
+####ServerAPI
+
+NodeJS
+Express 4
+Passport
+Bcrypt
+RethinkDB
+thinky.io
+REQL
+
+####FrontEnd
+
+React
+Redux
+ReduxForm
+DropZone
+TinyMCE
+Toastr
+Moment
+Redux-Thunk
+Babel
+  testing:
+  Mocha
+  Chai
+  Nock
+  Mock-Local_Storage
+  
+####Deployment
+
+Webpack
+Heroku
