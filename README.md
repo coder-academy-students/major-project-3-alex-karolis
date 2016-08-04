@@ -32,11 +32,11 @@ Build an interactive React-Redux frontend with a separate Node.JS backend API to
 
 ### Demonstrate your ability to satisfy your client with the quality of your work and high level of service.
 
-1. Record all interactions with your client in a diary format.
+####One Record all interactions with your client in a diary format.
 
 Email records provided to head teacher
 
-2. Plan information gathering activities to determine project requirements, constraints and risks.
+####Two Plan information gathering activities to determine project requirements, constraints and risks.
 
 ####Client requirements constraints and risks, a discussion of the project:
 
@@ -91,11 +91,11 @@ The other possiblity was ReactJS which we settled on for two reasons. Firstly, i
 Once we had settled on this choice, I made the decision to build the React application using Redux. Redux provides a powerful but simple pattern for managing data in the frontend, and would enable me to pull some of the business logic off the API and into the frontend. Allowing me to call the API less often, and narrow the terms required to streamline the API calls within the frontend itself.
 
 
-3. Develop project charter, including preliminary statement of project scope and obtain sign-off
+####Three Develop project charter, including preliminary statement of project scope and obtain sign-off
 
 See client interaction emails.
 
-4. Prepare project work breakdown, schedule and budget
+####Four Prepare project work breakdown, schedule and budget
 
 40 hours training
 40 hour sprint for first iteration
@@ -103,18 +103,18 @@ See client interaction emails.
 
 Cost $0
 
-5. Compile project management plan documents as necessary to communicate the intended management strategy for the project and obtain sign-off
+####Five Compile project management plan documents as necessary to communicate the intended management strategy for the project and obtain sign-off
 
 See client interaction emails
 
-6. Identify and select team members, and allocate roles and responsibilities, based on project solution requirements
+####Six Identify and select team members, and allocate roles and responsibilities, based on project solution requirements
 
 Lead developer: me
 Second developer: me
 UI/UX developer: me
 Gopher: me
 
-7. Determine training and support needs of team members
+####Seven Determine training and support needs of team members
 
 In order to prepare for this project I completed the following courses on Udemy:
 
@@ -122,7 +122,7 @@ Modern React with Redux
 Advanced React and Redux
 ES6 javascript: The complete developers guide
 
-8. Establish project team values and agreed behavioural standards with team members
+####Eight Establish project team values and agreed behavioural standards with team members
 
 Agreed behavioural standards:
 
@@ -135,7 +135,7 @@ Be the change you seek
 Show compassion and kindness at all times
 Discrimination or bias because of gender, race, or sexual preference is never tolerated.
 
-9. Monitor delivery and acceptance of assigned project team work activities and manage individuals
+####Nine Monitor delivery and acceptance of assigned project team work activities and manage individuals
 
 Log of all project commits:
 
@@ -413,11 +413,11 @@ Tue Jul 19 21:22:37 2016 +1000
 Tue Jul 19 21:01:11 2016 +1000
     initial commit
 
-10. Monitor and control project scope changes, risks and issues
+####Ten Monitor and control project scope changes, risks and issues
 
 The only major issue of note is the cost associated with hosting rethinkDB. Unfortunately heroku is not compatible with rethinkDB and in order to host the app I would have to spend money on a subscription. I have sought costing, and the initial monthly outlay would be $20, though further costs would be substantially less depending on the application usage. I am currently investigating alternatives, or the possibility of self-funding in order to create an online version of the application. In lieu of that I would refactor the code to use MongoDB and mongoose, which would involve about 3-6 hours of work.
 
-11. Manage system testing and hand over activities
+####Eleven Manage system testing and hand over activities
 
 Test have been written for all the action creators in the front end. The can be tested by running
 
@@ -425,24 +425,44 @@ Test have been written for all the action creators in the front end. The can be 
 
 from within the frontend/ directory.
 
-12. Prepare IT support plans and maintenance or support documents
+####Twelve Prepare IT support plans and maintenance or support documents
 
-It support at this stage would be minimal. However, if the project pivoted to a 
+This project is ongoing, and I intend to pivot this into a personal project. As such IT support will be provided by myself in the medium term.
 
-13. Obtain final project sign-off
-14. Conduct post project review
-15. Create a questionnaire for the client to ascertain the satisfaction with your product and service.
+####Thirteen Obtain final project sign-off
 
+See client emails
+
+####Fourteen Conduct post project review
+
+TBA
+
+####Fifteen Create a questionnaire for the client to ascertain the satisfaction with your product and service.
+
+TBA
 
 ### Application Design
 
 #### Demonstrate your ability to break down the problem and design a solution.
 
 1. One page summary of your application including problem definition, solution.
+
+Problem: Provide a functional model of an application that interacts with a document database capable of scale, whilst also allowing the power of Object Relational Mapping. Front end must be capable of holding business logic for parsing and updating data in order to minimise API stress.
+
 2. Determine the appropriate client technology, development tools, and platform for writing the UI
+
+See above.
+
 3. Review the conceptual design with the client, and edit as required
+
+See above.
+
 4. A workflow diagram of the user journey/s.
+
 5. Wireframes for at least 5 screens.
+
+![image01](Presentation/image01.png)
+
 6. User stories for the whole application.
 7. Entity Relationship Diagram (ERD).
 8. Project plan and effort estimation.
