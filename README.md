@@ -2,6 +2,8 @@
 
 ### Major Project for codefactory academy bootcamp
 
+Front end React-Redux application hosted @ 
+
 #### Clone Repository
 
 `git clone git@github.com:alexi21/SuperSearchProjectFolder.git supersearch`
@@ -32,11 +34,11 @@ Build an interactive React-Redux frontend with a separate Node.JS backend API to
 
 ### Demonstrate your ability to satisfy your client with the quality of your work and high level of service.
 
-####One Record all interactions with your client in a diary format.
+####ONE: Record all interactions with your client in a diary format.
 
 Email records provided to head teacher
 
-####Two Plan information gathering activities to determine project requirements, constraints and risks.
+####TWO: Plan information gathering activities to determine project requirements, constraints and risks.
 
 ####Client requirements constraints and risks, a discussion of the project:
 
@@ -91,11 +93,11 @@ The other possiblity was ReactJS which we settled on for two reasons. Firstly, i
 Once we had settled on this choice, I made the decision to build the React application using Redux. Redux provides a powerful but simple pattern for managing data in the frontend, and would enable me to pull some of the business logic off the API and into the frontend. Allowing me to call the API less often, and narrow the terms required to streamline the API calls within the frontend itself.
 
 
-####Three Develop project charter, including preliminary statement of project scope and obtain sign-off
+####THREE: Develop project charter, including preliminary statement of project scope and obtain sign-off
 
 See client interaction emails.
 
-####Four Prepare project work breakdown, schedule and budget
+####FOUR: Prepare project work breakdown, schedule and budget
 
 40 hours training
 40 hour sprint for first iteration
@@ -103,18 +105,18 @@ See client interaction emails.
 
 Cost $0
 
-####Five Compile project management plan documents as necessary to communicate the intended management strategy for the project and obtain sign-off
+####FIVE: Compile project management plan documents as necessary to communicate the intended management strategy for the project and obtain sign-off
 
 See client interaction emails
 
-####Six Identify and select team members, and allocate roles and responsibilities, based on project solution requirements
+####SIX: Identify and select team members, and allocate roles and responsibilities, based on project solution requirements
 
 Lead developer: me
 Second developer: me
 UI/UX developer: me
 Gopher: me
 
-####Seven Determine training and support needs of team members
+####SEVEN: Determine training and support needs of team members
 
 In order to prepare for this project I completed the following courses on Udemy:
 
@@ -122,7 +124,7 @@ Modern React with Redux
 Advanced React and Redux
 ES6 javascript: The complete developers guide
 
-####Eight Establish project team values and agreed behavioural standards with team members
+####EIGHT: Establish project team values and agreed behavioural standards with team members
 
 Agreed behavioural standards:
 
@@ -135,7 +137,7 @@ Be the change you seek
 Show compassion and kindness at all times
 Discrimination or bias because of gender, race, or sexual preference is never tolerated.
 
-####Nine Monitor delivery and acceptance of assigned project team work activities and manage individuals
+####NINE: Monitor delivery and acceptance of assigned project team work activities and manage individuals
 
 Log of all project commits:
 
@@ -408,16 +410,16 @@ Wed Jul 20 10:35:18 2016 +1000
     create database for comments, create api for setting and getting data, require jwt
 
 Tue Jul 19 21:22:37 2016 +1000
-    add search data model and methods'
+    add search data model and methods
 
 Tue Jul 19 21:01:11 2016 +1000
     initial commit
 
-####Ten Monitor and control project scope changes, risks and issues
+####TEN: Monitor and control project scope changes, risks and issues
 
 The only major issue of note is the cost associated with hosting rethinkDB. Unfortunately heroku is not compatible with rethinkDB and in order to host the app I would have to spend money on a subscription. I have sought costing, and the initial monthly outlay would be $20, though further costs would be substantially less depending on the application usage. I am currently investigating alternatives, or the possibility of self-funding in order to create an online version of the application. In lieu of that I would refactor the code to use MongoDB and mongoose, which would involve about 3-6 hours of work.
 
-####Eleven Manage system testing and hand over activities
+####ELEVEN Manage system testing and hand over activities
 
 Test have been written for all the action creators in the front end. The can be tested by running
 
@@ -425,19 +427,19 @@ Test have been written for all the action creators in the front end. The can be 
 
 from within the frontend/ directory.
 
-####Twelve Prepare IT support plans and maintenance or support documents
+####TWELVE Prepare IT support plans and maintenance or support documents
 
 This project is ongoing, and I intend to pivot this into a personal project. As such IT support will be provided by myself in the medium term.
 
-####Thirteen Obtain final project sign-off
+####THIRTEEN Obtain final project sign-off
 
 See client emails
 
-####Fourteen Conduct post project review
+####FOURTEEN Conduct post project review
 
 TBA
 
-####Fifteen Create a questionnaire for the client to ascertain the satisfaction with your product and service.
+####FIFTEEN Create a questionnaire for the client to ascertain the satisfaction with your product and service.
 
 TBA
 
