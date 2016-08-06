@@ -6,9 +6,13 @@ There are three options for checking out this project.
 
 ### Online:
 
-Check out the heroku hosted front-end, minus a database unfortunately as rethinkDB costs money right now to host. Check back soon as I will be hardcoding some dummy data and spinning up the API shortly.
+React-Redux front end, bundled using webpack and served using express on Heroku
 
-Front end React-Redux application hosted @ https://salty-stream-21030.herokuapp.com/
+Separate Node.JS and Express API in its own container on Heroku
+
+RethinkDB hosted on Compose.IO
+
+ACCESS @ https://salty-stream-21030.herokuapp.com/
 
 ### Download it and play with it yourself.
 
