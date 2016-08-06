@@ -36,13 +36,15 @@ Follow these steps:
 
 `cd supersearch/frontend && npm start`
 
+#### email me for the secret keys :)
+
+Then
+
 #### Open application
 
 Navigate to localhost:8000 in your web browser
 
 Signup and navigate away...
-
-### Fund me to pay for the DB host and I will spin up the full app by hosting RethinkDB :)
 
 ## The project
 
