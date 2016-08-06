@@ -6,6 +6,8 @@ There are three options for checking out this project.
 
 ### Online:
 
+#### Fully Distributed System
+
 React-Redux front end, bundled using webpack and served using express on Heroku
 
 Separate Node.JS and Express API in its own container on Heroku
