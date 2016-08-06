@@ -1,10 +1,5 @@
-const thinkyOptions = {
-  db: 'supersearch',
-  host: 'localhost',
-  port: 28015
-};
 
-const thinky = require('thinky')(thinkyOptions);
+const thinky = require('./thinky');
 const type = thinky.type;
 const bcrypt = require('bcrypt-nodejs');
 
